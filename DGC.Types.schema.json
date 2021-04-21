@@ -9,7 +9,7 @@
       "maxLength": 16,
       "contentMediaType": "text/plain"
     },
-    "vaccination-entry": {
+    "vaccination_entry": {
       "description": "Vaccination Entry",
       "required": [
         "tg",
