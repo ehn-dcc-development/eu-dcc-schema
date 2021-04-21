@@ -1,21 +1,19 @@
 {
+  "$schema": "https://json-schema.org/draft-07/schema",
   "$id": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate Core Data Types",
   "$defs": {
     "dob_valid_date_range": {
       "description": "Date type ISO 8601 - date part only, restricted to range 1900-2099",
       "type": "string",
-      "$comment": "SemanticSG: constrain range of dob valid values?",
       "pattern": "[19|20][0-9][0-9]-(0[1-9]|1[0-2])-([0-2][1-9]|3[0|1])"
     },
     "dose_posint": {
-      "description": "Dose Number / Total doses in Series: positive integer, range: [1,99]",
+      "description": "Dose Number / Total doses in Series: positive integer, range: [1,9]",
       "type": "integer",
-      "$comment": "SemanticSG: Should we limit 1-9 here?",
       "minimum": 1,
-      "exclusiveMaximum": 100
+      "maximum": 9
     },
     "country_vt": {
       "description": "Country of Vaccination / Test, ISO 3166 where possible",
@@ -25,20 +23,20 @@
     "issuer": {
       "description": "Certificate Issuer",
       "type": "string",
-      "$comment": "SemanticSG: is there any text pattern this should conform to at EU level, or is string sufficient here?"
+      "maxLength": 50
     },
     "person_name": {
       "description": "Person name: Surname(s), forename(s) - in that order",
       "required": [
-        "fn"
+        "_fn", "_gn"
       ],
-      "$comment": "SemanticSG: sometimes name stored as one long string in Family Name field - thus only 'fn' as required?",
       "type": "object",
       "properties": {
         "fn": {
           "title": "Family name",
           "description": "The family name(s) of the person addressed in the certificate",
           "type": "string",
+          "maxLength": 50,
           "examples": [
             "Červenková Panklová"
           ]
@@ -47,7 +45,7 @@
           "title": "Standardised family name",
           "description": "The family name(s) of the person transliterated",
           "type": "string",
-          "$comment": "SematicSG: ICAO transliterated has max length of?",
+          "maxLength": 50,
           "examples": [
             "CERVENKOVA PANKLOVA"
           ]
@@ -56,6 +54,7 @@
           "title": "Given name",
           "description": "The given name(s) of the person addressed in the certificate",
           "type": "string",
+          "maxLength": 50,
           "examples": [
             "Jiřina Alena"
           ]
@@ -73,9 +72,9 @@
       }
     },
     "certificate_id": {
-      "description": "Certificate Identifier",
+      "description": "Certificate Identifier, UVCI",
       "type": "string",
-      "$comment": "SemanticSG: check spec for Cert ID: eHN Recovery pdf referred to Vacc UVCI for this field, so they _may_ all be in the same format as UVCI - or not?",
+      "maxLength": 50,
       "unique": true
     }
   }

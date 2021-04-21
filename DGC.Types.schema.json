@@ -1,6 +1,6 @@
 {
+  "$schema": "https://json-schema.org/draft-07/schema",
   "$id": "https://ec.europa.eu/dgc/DGC.Types.schema.json",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate Composite Data Types",
   "$defs": {
@@ -118,7 +118,7 @@
         "tc": {
           "description": "Testing Centre",
           "type": "string",
-          "$comment": "TODO: check if any formatting for address - but address formats are notoriously variable... so maybe just leave as string?"
+          "maxLength": 50
         },
         "co": {
           "description": "Country of Test",
@@ -129,8 +129,7 @@
           "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#issuer"
         },
         "ci": {
-          "description": "Unique Certificate Identifier",
-          "$comment": "SematicSG: is this UVCI or different?",
+          "description": "Unique Certificate Identifier, UVCI",
           "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/certificate_id"
         }
       }
@@ -167,18 +166,15 @@
         "df": {
           "description": "ISO 8601 Date: Certificate Valid From",
           "type": "string",
-          "format": "date",
-          "$comment": "SemanticSG: (1) check if this just date or datetime, and (2) date range constraints?"
+          "format": "date-time",
         },
         "du": {
           "description": "Certificate Valid Until",
           "type": "string",
-          "format": "date",
-          "$comment": "SemanticSG: (1) check if this just date or datetime, and (2) date range constraints?"
+          "format": "date-time",
         },
         "ci": {
-          "description": "Unique Certificate Identifier",
-          "$comment": "SematicSG: is this UVCI or different?",
+          "description": "Unique Certificate Identifier, UVCI",
           "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/certificate_id"
         }
       }
