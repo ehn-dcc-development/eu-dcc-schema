@@ -1,0 +1,59 @@
+{
+  "$id": "https://ec.europa.eu/dgc/DGC.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EU DGC",
+  "description": "EU Digital Green Certificate",
+  "required": [
+    "nam",
+    "dob",
+    "dsc"
+  ],
+  "anyOf": [
+    "v",
+    "t",
+    "r"
+  ],
+  "type": "object",
+  "properties": {
+    "nam": {
+      "description": "Surname(s), forename(s) - in that order",
+      "type": "array",
+      "entry": {
+        "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/person_name"
+      },
+      "minNam": 1
+    },
+    "dob": {
+      "description": "Date of Birth, ISO 8601",
+      "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/dob_valid_date_range"
+    },
+    "dsc": {
+      "description": "Document Signing Certificate: 8 bytes",
+      "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/dsc"
+    },
+    "v": {
+      "description": "Vaccination Group",
+      "type": "array",
+      "entry": {
+        "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/vaccination_entry"
+      },
+      "minEntry": 1
+    },
+    "t": {
+      "description": "Test Group",
+      "type": "array",
+      "entry": {
+        "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/test_entry"
+      },
+      "minEntry": 1
+    },
+    "r": {
+      "description": "Recovery Group",
+      "type": "array",
+      "entry": {
+        "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/recovery_entry"
+      },
+      "minEntry": 1
+    }
+  }
+}

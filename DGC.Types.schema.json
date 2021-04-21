@@ -1,0 +1,187 @@
+{
+  "$id": "https://ec.europa.eu/dgc/DGC.Types.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EU DGC",
+  "description": "EU Digital Green Certificate Composite Data Types",
+  "$defs": {
+    "dsc": {
+      "type": "string",
+      "contentEncoding": "base45",
+      "contentMediaType": "application/octet-stream"
+    },
+    "vaccination-entry": {
+      "description": "Vaccination Entry",
+      "required": [
+        "tg",
+        "vp",
+        "mp",
+        "ma",
+        "dn",
+        "sd",
+        "dt",
+        "co",
+        "is",
+        "ci"
+      ],
+      "type": "object",
+      "properties": {
+        "tg": {
+          "description": "disease or agent targeted",
+          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+        },
+        "vp": {
+          "description": "vaccine or prophylaxis",
+          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-prophylaxis"
+        },
+        "mp": {
+          "description": "vaccine medicinal product",
+          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-medicinal-product"
+        },
+        "ma": {
+          "description": "Marketing Authorization Holder - if no MAH present, then manufacturer",
+          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-mah-manf"
+        },
+        "dn": {
+          "description": "Dose Number",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#dose_posint"
+        },
+        "sd": {
+          "description": "Total Series of Doses",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#dose_posint"
+        },
+        "dt": {
+          "description": "Date of Vaccination",
+          "type": "string",
+          "format": "date",
+          "$comment": "SemanticSG: constrain to specific date range?"
+        },
+        "co": {
+          "description": "Country of Vaccination",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#country_vt"
+        },
+        "is": {
+          "description": "Certificate Issuer",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#issuer"
+        },
+        "ci": {
+          "description": "Unique Certificate Identifier: UVCI",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/certificate_id"
+        }
+      }
+    },
+    "test_entry": {
+      "description": "Test Entry",
+      "required": [
+        "tg",
+        "tt",
+        "nm",
+        "ma",
+        "sc",
+        "dr",
+        "rt",
+        "tc",
+        "co",
+        "is",
+        "ci"
+      ],
+      "type": "object",
+      "properties": {
+        "tg": {
+          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+        },
+        "tt": {
+          "description": "Type of Test",
+          "type": "string"
+        },
+        "nm": {
+          "description": "Test Name",
+          "type": "string"
+        },
+        "ma": {
+          "description": "Test Manufacturer",
+          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/test-manf"
+        },
+        "sc": {
+          "description": "Date/Time of Sample Collection",
+          "type": "string",
+          "format": "date-time"
+        },
+        "dr": {
+          "description": "Date/Time of Test Result",
+          "type": "string",
+          "format": "date-time"
+        },
+        "tr": {
+          "description": "Test Result",
+          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/test-result"
+        },
+        "tc": {
+          "description": "Testing Centre",
+          "type": "string",
+          "$comment": "TODO: check if any formatting for address - but address formats are notoriously variable... so maybe just leave as string?"
+        },
+        "co": {
+          "description": "Country of Test",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#country_vt"
+        },
+        "is": {
+          "description": "Certificate Issuer",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#issuer"
+        },
+        "ci": {
+          "description": "Unique Certificate Identifier",
+          "$comment": "SematicSG: is this UVCI or different?",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/certificate_id"
+        }
+      }
+    },
+    "recovery_entry": {
+      "description": "Recovery Entry",
+      "required": [
+        "tg",
+        "fr",
+        "co",
+        "is",
+        "df",
+        "du",
+        "ci"
+      ],
+      "type": "object",
+      "properties": {
+        "tg": {
+          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+        },
+        "fr": {
+          "description": "ISO 8601 Date of First Positive Test Result",
+          "type": "string",
+          "format": "date"
+        },
+        "co": {
+          "description": "Country of Test",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#country_vt"
+        },
+        "is": {
+          "description": "Certificate Issuer",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#issuer"
+        },
+        "df": {
+          "description": "ISO 8601 Date: Certificate Valid From",
+          "type": "string",
+          "format": "date",
+          "$comment": "SemanticSG: (1) check if this just date or datetime, and (2) date range constraints?"
+        },
+        "du": {
+          "description": "Certificate Valid Until",
+          "type": "string",
+          "format": "date",
+          "$comment": "SemanticSG: (1) check if this just date or datetime, and (2) date range constraints?"
+        },
+        "ci": {
+          "description": "Unique Certificate Identifier",
+          "$comment": "SematicSG: is this UVCI or different?",
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/certificate_id"
+        }
+      }
+    }
+  }
+}

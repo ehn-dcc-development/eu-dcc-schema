@@ -1,0 +1,87 @@
+{
+  "$id": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EU DGC",
+  "description": "EU Digital Green Certificate Value Set Data Types",
+  "$defs": {
+    "disease-agent-targeted": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1",
+      "type": "object",
+      "required": ["code", "system"],
+      "oneOf": [
+        {"code": { "const": "840539006"}, "system": { "const": "2.16.840.1.113883.6.96" }, "version": {"const": "2021-01-31"}}
+      ]
+    },
+    "vaccine-prophylaxis": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.2",
+      "type": "object",
+      "required": ["code", "system"],
+      "oneOf": [
+        { "code": { "const": "1119305005"}, "system": { "const": "2.16.840.1.113883.6.96"}, "version": { "const": "2021-01-31"} },
+        { "code": { "const": "1119349007"}, "system": { "const": "2.16.840.1.113883.6.96"}, "version": { "const": "2021-01-31"} },
+        { "code": { "const": "J07BX03"},    "system": { "const": "2.16.840.1.113883.6.73"}, "version": { "const": "2021-01"} }
+      ]
+    },
+    "vaccine-medicinal-product": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3",
+      "type": "object",
+      "required": ["code"],
+      "oneOf": [
+        { "code": { "const": "EU/1/20/1528"}, "system": { "const": "https://ec.europa.eu/health/documents/community-register/html/"}},
+        { "code": { "const": "EU/1/20/1507"}, "system": { "const": "https://ec.europa.eu/health/documents/community-register/html/"}},
+        { "code": { "const": "EU/1/21/1529"}, "system": { "const": "https://ec.europa.eu/health/documents/community-register/html/"}},
+        { "code": { "const": "EU/1/20/1525"}, "system": { "const": "https://ec.europa.eu/health/documents/community-register/html/"}},
+        { "code": { "const": "CVnCoV"}, "version": { "const": "1.0"}},
+        { "code": { "const": "NVX-CoV2373"}, "version": { "const": "1.0"}},
+        { "code": { "const": "Sputnik-V"}, "version": { "const": "1.0"}},
+        { "code": { "const": "Convidecia"}, "version": { "const": "1.0"}},
+        { "code": { "const": "EpiVacCorona"}, "version": { "const": "1.0"}},
+        { "code": { "const": "BBIBP-CorV"}, "version": { "const": "1.0"}},
+        { "code": { "const": "Inactivated-SARS-CoV-2-Vero-Cell"}, "version": { "const": "1.0"}},
+        { "code": { "const": "CoronaVac"}, "version": { "const": "1.0"}},
+        { "code": { "const": "Covaxin"}, "version": { "const": "1.0"}}
+      ]
+    },
+    "vaccine-mah-manf": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.4",
+      "type": "object",
+      "required": ["code"],
+      "oneOf": [
+        { "code": { "const": "ORG-100001699"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100030215"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100001417"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100031184"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100006270"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100013793"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100020693"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100020693"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100010771"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100024420"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "ORG-100032020"}, "system": { "const": "2.16.840.1.113883.3.6905.4"}},
+        { "code": { "const": "Gamaleya-Research-Institute"}, "version": { "const": "1.0"}},
+        { "code": { "const": "Vector-Institute"}, "version": { "const": "1.0"}},
+        { "code": { "const": "Sinovac-Biotech"}, "version": { "const": "1.0"}},
+        { "code": { "const": "Bharat-Biotech"}, "version": { "const": "1.0"}}
+      ]
+    },
+    "test-manf" : {
+      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.8",
+      "type": "object",
+      "required": ["code", "system"],
+      "$comment": "SemanticSG: HOW TO VALIDATE? Parse JSON from: https://covid-19-diagnostics.jrc.ec.europa.eu/devices/hsc-common-recognition-rat ?",
+      "oneOf": [
+        { "code": { "const": ""}, "system": { "const": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices"}, "version": {"const": ""}},
+        { "code": { "const": ""}, "system": { "const": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices"}, "version": {"const": ""}}
+      ]
+    },
+    "test-result": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9",
+      "type": "object",
+      "required": ["code", "system", "version"],
+      "oneOf": [
+        { "code": { "const": "260415000 "}, "system": { "const": "2.16.840.1.113883.6.96"}, "version": {"const": "2021-01-31"}},
+        { "code": { "const": "260373001"}, "system": { "const": "2.16.840.1.113883.6.96"}, "version": {"const": "2021-01-31"}}
+      ]
+    }
+  }
+}
