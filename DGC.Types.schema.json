@@ -6,8 +6,8 @@
   "$defs": {
     "dsc": {
       "type": "string",
-      "contentEncoding": "base45",
-      "contentMediaType": "application/octet-stream"
+      "maxLength": 16,
+      "contentMediaType": "text/plain"
     },
     "vaccination-entry": {
       "description": "Vaccination Entry",
