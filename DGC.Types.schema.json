@@ -163,12 +163,12 @@
         "df": {
           "description": "ISO 8601 Date: Certificate Valid From",
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "du": {
           "description": "Certificate Valid Until",
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "ci": {
           "description": "Unique Certificate Identifier, UVCI",
