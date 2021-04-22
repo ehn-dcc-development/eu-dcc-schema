@@ -1,13 +1,15 @@
-check:: check-schemata check-examples check-format
+check:: check-schemata check-formatting
 
 check-schemata::
-	jq . < DGC.schema.json
-	jq . < DGC.Core.Types.schema.json
-	jq . < DGC.Types.schema.json
-	jq . < DGC.ValueSets.schema.json
+	@echo "Checking schemata JSON..."
+	@jq . <DGC.schema.json >/dev/null
+	@jq . <DGC.Core.Types.schema.json >/dev/null
+	@jq . <DGC.Types.schema.json >/dev/null
+	@jq . <DGC.ValueSets.schema.json >/dev/null
 
-check-format::
-	for file in *.json; do \
+check-formatting::
+	@echo "Checking formatting..."
+	@for file in *.json; do \
 		jq . <$$file >$$file.tmp; \
 		if ! cmp $$file $$file.tmp; then \
 			echo "Please reformat $$file"; \
@@ -15,8 +17,6 @@ check-format::
 		rm $$file.tmp; \
 	done
 
-check-examples::
-	@echo "Examples not yet checked"
 
 reformat::
 	for file in *.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
