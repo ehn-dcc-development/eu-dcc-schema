@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install jq
-      run: sudo apt-get install jq
+    - name: Install dependencies
+      run: sudo apt-get install jq nodejs
+    - name: Install AJV
+      run: make install-ajv
     - name: Check schema
       run: make check
