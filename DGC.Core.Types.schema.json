@@ -40,6 +40,7 @@
           "title": "Standardised family name",
           "description": "The family name(s) of the person transliterated",
           "type": "string",
+          "pattern": "^[A-Z<]*$",
           "maxLength": 50,
           "examples": [
             "DCERVENKOVA<PANKLOVA"
@@ -58,6 +59,7 @@
           "title": "Standardised given name",
           "description": "The given name(s) of the person transliterated",
           "type": "string",
+          "pattern": "^[A-Z<]*$",
           "maxLength": 50,
           "$comment": "SematicSG: ICAO transliterated has max length of?",
           "examples": [
