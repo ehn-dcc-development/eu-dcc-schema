@@ -2,7 +2,7 @@
     "840539006": {
         "display": "COVID-19",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://snomed.info/sct",
         "version": "2021-01-31",
         "valueSetId": "covid-19-diseases"
@@ -10,7 +10,7 @@
     "1119349007": {
         "display": "SARS-CoV-2 mRNA vaccine",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://snomed.info/sct",
         "version": "2021-01-31",
         "valueSetId": "sct-vaccines-covid-19"
@@ -18,7 +18,7 @@
     "1119305005": {
         "display": "SARS-CoV-2 antigen vaccine",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://snomed.info/sct",
         "version": "2021-01-31",
         "valueSetId": "sct-vaccines-covid-19"
@@ -26,7 +26,7 @@
     "J07BX03": {
         "display": "covid-19 vaccines",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://www.whocc.no/atc",
         "version": "2021-01",
         "valueSetId": "sct-vaccines-covid-19"
@@ -34,7 +34,7 @@
     "EU/1/20/1528": {
         "display": "Comirnaty",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://ec.europa.eu/health/documents/community-register/html/",
         "version": "",
         "valueSetId": "vaccines-covid-19-names"
@@ -42,7 +42,7 @@
     "EU/1/20/1507": {
         "display": "COVID-19 Vaccine Moderna",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://ec.europa.eu/health/documents/community-register/html/",
         "version": "",
         "valueSetId": "vaccines-covid-19-names"
@@ -50,7 +50,7 @@
     "EU/1/21/1529": {
         "display": "Vaxzevria",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://ec.europa.eu/health/documents/community-register/html/",
         "version": "",
         "valueSetId": "vaccines-covid-19-names"
@@ -58,7 +58,7 @@
     "EU/1/20/1525": {
         "display": "COVID-19 Vaccine Janssen",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://ec.europa.eu/health/documents/community-register/html/",
         "version": "",
         "valueSetId": "vaccines-covid-19-names"
@@ -66,7 +66,7 @@
     "CVnCoV": {
         "display": "CVnCoV",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccineproductname",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-names"
@@ -74,7 +74,7 @@
     "Sputnik-V": {
         "display": "Sputnik-V",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccineproductname",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-names"
@@ -82,7 +82,7 @@
     "Convidecia": {
         "display": "Convidecia",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccineproductname",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-names"
@@ -90,7 +90,7 @@
     "EpiVacCorona": {
         "display": "EpiVacCorona",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccineproductname",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-names"
@@ -98,7 +98,7 @@
     "BBIBP-CorV": {
         "display": "BBIBP-CorV",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccineproductname",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-names"
@@ -106,7 +106,7 @@
     "Inactivated-SARS-CoV-2-Vero-Cell": {
         "display": "Inactivated SARS-CoV-2 (Vero Cell)",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccineproductname",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-names"
@@ -114,7 +114,7 @@
     "CoronaVac": {
         "display": "CoronaVac",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccineproductname",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-names"
@@ -122,7 +122,7 @@
     "Covaxin": {
         "display": "Covaxin (also known as BBV152 A, B, C)",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccineproductname",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-names"
@@ -130,7 +130,7 @@
     "ORG-100001699": {
         "display": "AstraZeneca AB",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -138,7 +138,7 @@
     "ORG-100030215": {
         "display": "Biontech Manufacturing GmbH",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -146,7 +146,7 @@
     "ORG-100001417": {
         "display": "Janssen-Cilag International",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -154,7 +154,7 @@
     "ORG-100031184": {
         "display": "Moderna Biotech Spain S.L.",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -162,7 +162,7 @@
     "ORG-100006270": {
         "display": "Curevac AG",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -170,7 +170,7 @@
     "ORG-100013793": {
         "display": "CanSino Biologics",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -178,7 +178,7 @@
     "ORG-100020693": {
         "display": "China Sinopharm International Corp. - Beijing location",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -186,7 +186,7 @@
     "ORG-100010771": {
         "display": "Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -194,7 +194,7 @@
     "ORG-100024420": {
         "display": "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -202,7 +202,7 @@
     "ORG-100032020": {
         "display": "Novavax CZ AS",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "https://spor.ema.europa.eu/v1/organisations",
         "version": "",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -210,7 +210,7 @@
     "Gamaleya-Research-Institute": {
         "display": "Gamaleya Research Institute",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -218,7 +218,7 @@
     "Vector-Institute": {
         "display": "Vector Institute",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -226,7 +226,7 @@
     "Sinovac-Biotech": {
         "display": "Sinovac Biotech",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -234,7 +234,7 @@
     "Bharat-Biotech": {
         "display": "Bharat Biotech",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
         "version": "1.0",
         "valueSetId": "vaccines-covid-19-auth-holders"
@@ -242,7 +242,7 @@
     "LP6464-4": {
         "display": "Nucleic acid amplification with probe detection",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://loinc.org",
         "version": "2.69",
         "valueSetId": "covid-19-lab-methods"
@@ -250,7 +250,7 @@
     "LP217198-3": {
         "display": "Rapid immunoassay",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://loinc.org",
         "version": "2.69",
         "valueSetId": "covid-19-lab-methods"
@@ -258,7 +258,7 @@
     "260415000": {
         "display": "Not detected",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://snomed.info/sct",
         "version": "2021-01-31",
         "valueSetId": "covid-19-lab-result"
@@ -266,7 +266,7 @@
     "260373001": {
         "display": "Detected",
         "lang": "en",
-        "active": "true",
+        "active": true,
         "system": "http://snomed.info/sct",
         "version": "2021-01-31",
         "valueSetId": "covid-19-lab-result"

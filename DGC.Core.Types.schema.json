@@ -4,11 +4,6 @@
   "title": "EU DGC",
   "description": "EU Digital Green Certificate Core Data Types",
   "$defs": {
-    "dob_valid_date_range": {
-      "description": "Date type ISO 8601 - date part only, restricted to range 1900-2099",
-      "type": "string",
-      "pattern": "[19|20][0-9][0-9]-(0[1-9]|1[0-2])-([0-2][1-9]|3[0|1])"
-    },
     "dose_posint": {
       "description": "Dose Number / Total doses in Series: positive integer, range: [1,9]",
       "type": "integer",

@@ -1,0 +1,15 @@
+name: Tests
+
+on: 
+  - push
+  - pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install jq
+      run: sudo apt-get install jq
+    - name: Check schema
+      run: make check
