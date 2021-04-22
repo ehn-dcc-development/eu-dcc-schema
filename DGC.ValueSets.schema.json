@@ -7,9 +7,6 @@
     "disease-agent-targeted": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1",
       "type": "string",
-      "required": [
-        "code"
-      ],
       "enum": [
         "840539006"
       ]
