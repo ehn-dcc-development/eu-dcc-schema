@@ -1,4 +1,4 @@
-AJV=	./node_modules/.bin/ajv --strict=false
+AJV=	./node_modules/.bin/ajv -c ajv-formats
 
 
 test:: check-formatting compile
@@ -21,4 +21,4 @@ reformat::
 	for file in *.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
 
 install-ajv:
-	npm install ajv ajv-cli
+	npm install ajv ajv-cli ajv-formats
