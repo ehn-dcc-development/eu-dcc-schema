@@ -15,8 +15,11 @@
       "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/person_name"
     },
     "dob": {
-      "description": "Date of Birth, ISO 8601",
-      "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/dob_valid_date_range"
+      "title": "Date of birth",
+      "description": "Date of Birth of the person addressed in the DGC. ISO 8601 date format",
+      "type": "string",
+      "format": "date",
+      "example": "1979-04-14"
     },
     "dsc": {
       "description": "Document Signing Certificate: 8 bytes",
