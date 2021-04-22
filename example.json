@@ -16,7 +16,7 @@
       "is": "Ministry of Public Health, Welfare and Sport",
       "df": "2021-04-23T20:20:00+00:00",
       "du": "2021-10-23T20:20:00+00:00",
-      "ci": "urn:uvci:NL:01:LSP/REC/1289821"
+      "ci": "urn:uvci:01:NL:LSP/REC/1289821"
     }
   ],
   "t": [
@@ -31,7 +31,7 @@
       "tc": "GGD Fryslân, L-Heliconweg",
       "co": "NL",
       "is": "Ministry of Public Health, Welfare and Sport",
-      "ci": "urn:uvci:NL:01:GGD/81ahh16az"
+      "ci": "urn:uvci:01:NL:GGD/81ahh16az"
     }
   ],
   "v": [
