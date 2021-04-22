@@ -249,8 +249,12 @@
     "disease-agent-targeted": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1",
       "type": "string",
-      "required": [ "code" ],
-      "enum": [ "840539006" ]
+      "required": [
+        "code"
+      ],
+      "enum": [
+        "840539006"
+      ]
     },
     "vaccine-prophylaxis": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.2",
@@ -264,21 +268,21 @@
     "vaccine-medicinal-product": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3",
       "type": "string",
-        "enum": [
-          "EU/1/20/1528",
-          "EU/1/20/1507",
-          "EU/1/21/1529",
-          "EU/1/20/1525",
-          "CVnCoV",
-          "NVX-CoV2373",
-          "Sputnik-V",
-          "Convidecia",
-          "EpiVacCorona",
-          "BBIBP-CorV",
-          "Inactivated-SARS-CoV-2-Vero-Cell",
-          "CoronaVac",
-          "Covaxin"
-        ]
+      "enum": [
+        "EU/1/20/1528",
+        "EU/1/20/1507",
+        "EU/1/21/1529",
+        "EU/1/20/1525",
+        "CVnCoV",
+        "NVX-CoV2373",
+        "Sputnik-V",
+        "Convidecia",
+        "EpiVacCorona",
+        "BBIBP-CorV",
+        "Inactivated-SARS-CoV-2-Vero-Cell",
+        "CoronaVac",
+        "Covaxin"
+      ]
     },
     "vaccine-mah-manf": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.4",
@@ -301,7 +305,7 @@
         "Bharat-Biotech"
       ]
     },
-    "test-manf" : {
+    "test-manf": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.8",
       "type": "string",
       "enum": [
@@ -329,7 +333,8 @@
         "345",
         "1218",
         "1343"
-      ]    },
+      ]
+    },
     "test-result": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9",
       "type": "string",

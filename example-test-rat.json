@@ -1,10 +1,10 @@
 {
   "nam": {
-      "fnt": "d'Arsøns - van Halen",
-      "gnt": "François-Joan",
-      "_fn": "DARSONS<VAN<HALEN",
-      "_gn": "FRANCOIS<JOAN"
-   },
+    "fnt": "d'Arsøns - van Halen",
+    "gnt": "François-Joan",
+    "_fn": "DARSONS<VAN<HALEN",
+    "_gn": "FRANCOIS<JOAN"
+  },
   "dob": "2009-02-28",
   "dsc": "DEADC0D3",
   "t": [
@@ -20,5 +20,5 @@
       "is": "Ministry of Public Health, Welfare and Sport",
       "ci": "urn:uvci:01:NL:GGD/81AAH16AZ"
     }
-  ],
+  ]
 }
