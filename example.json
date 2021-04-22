@@ -6,34 +6,32 @@
       "_gn": "FRANCOIS<JOAN"
    },
   "dob": "2020-02-29",
-  "dsc": "DEADBEEF",
+  "dsc": "DEADC0D3",
   "r": [
     {
       "tg": "840539006",
-      "vp": {
-        "code": "J07BX03"
-      },
-      "fr": "2021-12-12",
+      "vp": "J07BX03",
+      "fr": "2021-04-21",
       "co": "NL",
-      "is": "RIVM",
-      "df": "2021-04-13T20:20:39+00:00",
-      "du": "2021-11-13T20:20:20+00:00",
-      "ci": "uvci:NL:1289821"
+      "is": "Ministry of Public Health, Welfare and Sport",
+      "df": "2021-04-23T20:20:00+00:00",
+      "du": "2021-10-23T20:20:00+00:00",
+      "ci": "urn:uvci:NL:01:LSP/REC/1289821"
     }
   ],
   "t": [
     {
       "tg": "840539006",
-      "tt": "test type",
-      "nm": "test name",
+      "tt": "qPCR",
+      "nm": "Roche LightCycler qPCR",
       "tr": "260373001",
       "ma": "1232",
-      "sc": "2021-04-13T20:20:39+00:00",
-      "dr": "2021-04-13T20:20:39+00:00",
-      "tc": "Test Centre RIVM",
+      "sc": "2021-04-13T14:20:00+00:00",
+      "dr": "2021-04-13T20:00:01+00:00",
+      "tc": "GGD Fryslân, L-Heliconweg",
       "co": "NL",
-      "is": "RIVM",
-      "ci": "uvic:NL:1238938921"
+      "is": "Ministry of Public Health, Welfare and Sport",
+      "ci": "urn:uvci:NL:01:GGD/81ahh16az"
     }
   ],
   "v": [
@@ -42,12 +40,12 @@
       "vp": "J07BX03",
       "mp": "EU/1/20/1528",
       "ma": "ORG-100001699",
-      "dn": 1,
-      "sd": 3,
+      "dn": 2,
+      "sd": 2,
       "dt": "2021-04-21",
       "co": "NL",
-      "is": "RIVM",
-      "ci": "uvci:NL:12323211234"
+      "is": "Ministry of Public Health, Welfare and Sport",
+      "ci": "urn:uvci:01:NL:cPlA8UWoS6e0Z4RnZafwXptVoALl6GAtZ"
     }
   ]
 }
