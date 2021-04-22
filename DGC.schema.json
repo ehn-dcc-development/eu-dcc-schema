@@ -11,12 +11,8 @@
   "type": "object",
   "properties": {
     "nam": {
-      "description": "Surname(s), forename(s) - in that order",
-      "type": "array",
-      "entry": {
-        "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/person_name"
-      },
-      "minNam": 1
+      "description": "Surname(s), given name(s) - in that order",
+      "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/person_name"
     },
     "dob": {
       "description": "Date of Birth, ISO 8601",

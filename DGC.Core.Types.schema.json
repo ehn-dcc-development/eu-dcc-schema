@@ -26,9 +26,9 @@
       "maxLength": 50
     },
     "person_name": {
-      "description": "Person name: Surname(s), forename(s) - in that order",
+      "description": "Person name: Surname(s), given name(s) - in that order",
       "required": [
-        "_fn", "_gn"
+        "fnt", "gnt"
       ],
       "type": "object",
       "properties": {
@@ -41,7 +41,7 @@
             "Červenková Panklová"
           ]
         },
-        "_fn": {
+        "fnt": {
           "title": "Standardised family name",
           "description": "The family name(s) of the person transliterated",
           "type": "string",
@@ -59,7 +59,7 @@
             "Jiřina Alena"
           ]
         },
-        "_gn": {
+        "gnt": {
           "title": "Standardised given name",
           "description": "The given name(s) of the person transliterated",
           "type": "string",
