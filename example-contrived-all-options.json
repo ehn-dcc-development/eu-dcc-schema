@@ -22,16 +22,15 @@
   "t": [
     {
       "tg": "840539006",
-      "tt": "qPCR",
+      "tt": "LP6464-4",
       "nm": "Roche LightCycler qPCR",
-      "tr": "260373001",
-      "ma": "1232",
+      "tr": "260415000",
       "sc": "2021-04-13T14:20:00+00:00",
       "dr": "2021-04-13T20:00:01+00:00",
       "tc": "GGD Fryslân, L-Heliconweg",
       "co": "NL",
       "is": "Ministry of Public Health, Welfare and Sport",
-      "ci": "urn:uvci:01:NL:GGD/81ahh16az"
+      "ci": "urn:uvci:01:NL:GGD/81AAH16AZ"
     }
   ],
   "v": [
@@ -45,7 +44,7 @@
       "dt": "2021-04-21",
       "co": "NL",
       "is": "Ministry of Public Health, Welfare and Sport",
-      "ci": "urn:uvci:01:NL:cPlA8UWoS6e0Z4RnZafwXptVoALl6GAtZ"
+      "ci": "urn:uvci:01:NL:PlA8UWS60Z4RZXVALl6GAZ"
     }
   ]
 }

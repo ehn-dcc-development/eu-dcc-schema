@@ -1,0 +1,24 @@
+{
+  "nam": {
+      "fnt": "d'Arsøns - van Halen",
+      "gnt": "François-Joan",
+      "_fn": "DARSONS<VAN<HALEN",
+      "_gn": "FRANCOIS<JOAN"
+   },
+  "dob": "2020-02-29",
+  "dsc": "DEADC0D3",
+  "t": [
+    {
+      "tg": "840539006",
+      "tt": "???",
+      "tr": "260415000",
+      "ma": "1232",
+      "sc": "2021-04-13T14:20:00+00:00",
+      "dr": "2021-04-13T20:00:01+00:00",
+      "tc": "GGD Fryslân, L-Heliconweg",
+      "co": "NL",
+      "is": "Ministry of Public Health, Welfare and Sport",
+      "ci": "urn:uvci:01:NL:GGD/81AAH16AZ"
+    }
+  ],
+}
