@@ -25,13 +25,13 @@
     "person_name": {
       "description": "Person name: Surname(s), given name(s) - in that order",
       "required": [
-        "fnt", "gnt"
+        "fnt"
       ],
       "type": "object",
       "properties": {
         "fn": {
           "title": "Family name",
-          "description": "The family name(s) of the person addressed in the certificate",
+          "description": "The family or primary name(s) of the person addressed in the certificate",
           "type": "string",
           "maxLength": 50,
           "examples": [
