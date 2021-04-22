@@ -5,7 +5,7 @@ test:: check-formatting compile-schemata
 
 compile-schemata::
 	@echo "Compiling schemata..."
-	$(AJV) compile -s "DGC.*.json"
+	-$(AJV) compile -s "DGC.*.json"
 
 check-formatting::
 	@echo "Checking JSON formatting..."
