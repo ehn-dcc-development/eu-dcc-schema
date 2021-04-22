@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate Core Data Types",
@@ -23,26 +23,27 @@
     "person_name": {
       "description": "Person name: Surname(s), given name(s) - in that order",
       "required": [
-        "fnt", "gnt"
+        "fnt"
       ],
       "type": "object",
       "properties": {
         "fn": {
           "title": "Family name",
-          "description": "The family name(s) of the person addressed in the certificate",
+          "description": "The family or primary name(s) of the person addressed in the certificate",
           "type": "string",
           "maxLength": 50,
           "examples": [
-            "Červenková Panklová"
+            "d'Červenková Panklová"
           ]
         },
         "fnt": {
           "title": "Standardised family name",
           "description": "The family name(s) of the person transliterated",
           "type": "string",
+          "pattern": "^[A-Z<]*$",
           "maxLength": 50,
           "examples": [
-            "CERVENKOVA<<PANKLOVA"
+            "DCERVENKOVA<PANKLOVA"
           ]
         },
         "gn": {
@@ -51,17 +52,18 @@
           "type": "string",
           "maxLength": 50,
           "examples": [
-            "Jiřina Alena"
+            "Jiřina-Maria Alena"
           ]
         },
         "gnt": {
           "title": "Standardised given name",
           "description": "The given name(s) of the person transliterated",
           "type": "string",
+          "pattern": "^[A-Z<]*$",
           "maxLength": 50,
           "$comment": "SematicSG: ICAO transliterated has max length of?",
           "examples": [
-            "JIRINA<<ALENA"
+            "JIRINA<MARIA<ALENA"
           ]
         }
       }
@@ -69,8 +71,7 @@
     "certificate_id": {
       "description": "Certificate Identifier, UVCI",
       "type": "string",
-      "maxLength": 50,
-      "unique": true
+      "maxLength": 50
     }
   }
 }

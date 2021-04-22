@@ -1,19 +1,43 @@
-# JSON Schema for the ehn DGC payload.
+# Digital Green Certificate Schema
 
-This repository contains the EU eHealthNetwork official JSON schema documents defining the data payload for the Digital Green Certificate.
-This is a work-in-progress and the files are here for the primary purposes of:
-1. ease of review, and
-1. ease of reference for implementers
+This repository contains a schema for the EU Digital Green Certificate.
 
-## Structure
+**N.B. The schema is work in progress**
 
-Due to the somewhat complex nature of the payload referencing, the schema was split into four separate, more manageable files, split logically into:
+## Files
 
-1. ```DGC.schema.json```
-   1. the overall, high-level DGC type which combines the lower level types into the overall DGC structure
-1. ```DGC.Types.schema.json```
-   1. higher-level composite types, incorporating ```DGC.Core.Types.schema.json``` and ```DGC.ValueSets.schema.json```
-1. ```DGC.ValueSets.schema.json```
-   1. the value sets from  the eHN doc: "Guidelines on Value Sets for Digital Green Certificates", Version 1.0, 2021-04-16
-1. ```DGC.Core.Types.schema.json```
-   1. generally re-usable types
+The main schema file is:
+
+- DGC.schema.json
+
+With the defintions in:
+
+- DGC.Core.Types.schema.json
+- DGC.Types.schema.json
+- DGC.ValueSets.schema.json
+
+For easy testing - they are combined in:
+
+- DGC-all-schemas-combined.json (not built automatically yet)
+
+But the above 4 files are always leading.
+
+The files:
+
+- example*.json
+
+are examples created in vitro & very artificial.
+
+
+## Implementation Notes
+
+### CBOR Encoding
+
+Concise Binary Object Representation (CBOR), specified in [RFC7049](https://tools.ietf.org/html/rfc7049), defined a number of major data types. The following types are RECOMMENDED to be used by parties creating electronic health certificates payloads:
+
+- Integers are encoded as CBOR major type 0, an unsigned integer.
+- Strings are encoded as CBOR major type 3. a text string.
+- Arrays are encoded as CBOR major type 4, an array of data items.
+- Objects are encoded as CBOR major type 5, a map of pairs of data items.
+
+Parties validating payloads are strongly advised to follow the robustness principle and be liberal in what you accept from others.

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://ec.europa.eu/dgc/DGC.Types.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate Composite Data Types",
@@ -74,11 +74,8 @@
       "required": [
         "tg",
         "tt",
-        "nm",
-        "ma",
         "sc",
-        "dr",
-        "rt",
+        "tr",
         "tc",
         "co",
         "is",
@@ -94,11 +91,11 @@
           "type": "string"
         },
         "nm": {
-          "description": "Test Name",
+          "description": "NAA Test Name",
           "type": "string"
         },
         "ma": {
-          "description": "Test Manufacturer",
+          "description": "RAT Test name and manufacturer",
           "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/test-manf"
         },
         "sc": {
@@ -166,12 +163,12 @@
         "df": {
           "description": "ISO 8601 Date: Certificate Valid From",
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "du": {
           "description": "Certificate Valid Until",
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "ci": {
           "description": "Unique Certificate Identifier, UVCI",

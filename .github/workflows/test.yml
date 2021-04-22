@@ -1,0 +1,17 @@
+name: Tests
+
+on: 
+  - push
+  - pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: sudo apt-get install jq nodejs
+    - name: Install AJV
+      run: make install-ajv
+    - name: Run tests
+      run: make test
