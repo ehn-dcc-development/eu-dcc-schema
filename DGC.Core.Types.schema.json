@@ -71,8 +71,7 @@
     "certificate_id": {
       "description": "Certificate Identifier, UVCI",
       "type": "string",
-      "maxLength": 50,
-      "unique": true
+      "maxLength": 50
     }
   }
 }
