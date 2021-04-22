@@ -43,11 +43,11 @@
         },
         "dn": {
           "description": "Dose Number",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#dose_posint"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/dose_posint"
         },
         "sd": {
           "description": "Total Series of Doses",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#dose_posint"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/dose_posint"
         },
         "dt": {
           "description": "Date of Vaccination",
@@ -57,15 +57,15 @@
         },
         "co": {
           "description": "Country of Vaccination",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#country_vt"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#issuer"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/issuer"
         },
         "ci": {
           "description": "Unique Certificate Identifier: UVCI",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/certificate_id"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/certificate_id"
         }
       }
     },
@@ -119,15 +119,15 @@
         },
         "co": {
           "description": "Country of Test",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#country_vt"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#issuer"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/issuer"
         },
         "ci": {
           "description": "Unique Certificate Identifier, UVCI",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/certificate_id"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/certificate_id"
         }
       }
     },
@@ -154,11 +154,11 @@
         },
         "co": {
           "description": "Country of Test",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#country_vt"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#issuer"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/issuer"
         },
         "df": {
           "description": "ISO 8601 Date: Certificate Valid From",
@@ -172,7 +172,7 @@
         },
         "ci": {
           "description": "Unique Certificate Identifier, UVCI",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/certificate_id"
+          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/certificate_id"
         }
       }
     }
