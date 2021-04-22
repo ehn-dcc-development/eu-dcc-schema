@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://ec.europa.eu/dgc/DGC.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
@@ -20,7 +20,9 @@
       "type": "string",
       "format": "date",
       "pattern": "[19|20][0-9][0-9]-(0[1-9]|1[0-2])-([0-2][1-9]|3[0|1])",
-      "example": "1979-04-14"
+      "examples": [
+        "1979-04-14"
+      ]
     },
     "dsc": {
       "description": "Document Signing Certificate: 8 bytes",
@@ -32,7 +34,7 @@
       "items": {
         "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/vaccination_entry"
       },
-      "minEntry": 1
+      "minItems": 1
     },
     "t": {
       "description": "Test Group",
@@ -40,7 +42,7 @@
       "items": {
         "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/test_entry"
       },
-      "minEntry": 1
+      "minItems": 1
     },
     "r": {
       "description": "Recovery Group",
@@ -48,7 +50,7 @@
       "items": {
         "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/recovery_entry"
       },
-      "minEntry": 1
+      "minItems": 1
     }
   }
 }
