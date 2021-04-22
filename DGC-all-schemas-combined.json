@@ -144,10 +144,7 @@
       "required": [
         "tg",
         "tt",
-        "nm",
-        "ma",
         "sc",
-        "dr",
         "tr",
         "tc",
         "co",
@@ -164,11 +161,11 @@
           "type": "string"
         },
         "nm": {
-          "description": "Test Name",
+          "description": "NAA Test Name",
           "type": "string"
         },
         "ma": {
-          "description": "Test Manufacturer",
+          "description": "RAT Test name and manufacturer",
           "$ref": "#/$defs/test-manf"
         },
         "sc": {
