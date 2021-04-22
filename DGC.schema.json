@@ -4,12 +4,22 @@
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
   "required": [
+    "ver",
     "nam",
     "dob",
     "dsc"
   ],
   "type": "object",
   "properties": {
+    "ver": {
+      "title": "Schema version",
+      "description": "Version of the schema, according to Semantic versioning (ISO, https://semver.org/ version 2.0.0 or newer)",
+      "type": "string",
+      "pattern": "^\\d+.\\d+.\\d+$",
+      "examples": [
+        "1.0.0"
+      ]
+    },
     "nam": {
       "description": "Surname(s), given name(s) - in that order",
       "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/person_name"
