@@ -1,6 +1,8 @@
 # Digital Green Certificate Schema
 
-This repository contains a schema for Digital Green Certificate:
+This repository contains a schema for the EU Digital Green Certificate.
+
+**N.B. The schema is work in progress**
 
 ## Files
 
@@ -16,7 +18,7 @@ With the defintions in:
 
 For easy testing - they are combined in:
 
-- DGC-all-schemas-combined.json
+- DGC-all-schemas-combined.json (not built automatically yet)
 
 But the above 4 files are always leading.
 
