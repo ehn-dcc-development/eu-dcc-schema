@@ -1,7 +1,7 @@
 AJV=	./node_modules/.bin/ajv -c ajv-formats
 
 
-test:: check-formatting compile
+test:: compile check-formatting
 
 compile::
 	@echo "Compiling schemata..."
