@@ -25,7 +25,7 @@
     "v": {
       "description": "Vaccination Group",
       "type": "array",
-      "entry": {
+      "items": {
         "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/vaccination_entry"
       },
       "minEntry": 1
@@ -33,7 +33,7 @@
     "t": {
       "description": "Test Group",
       "type": "array",
-      "entry": {
+      "items": {
         "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/test_entry"
       },
       "minEntry": 1
@@ -41,7 +41,7 @@
     "r": {
       "description": "Recovery Group",
       "type": "array",
-      "entry": {
+      "items": {
         "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/recovery_entry"
       },
       "minEntry": 1
