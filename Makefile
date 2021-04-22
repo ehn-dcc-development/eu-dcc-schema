@@ -1,11 +1,11 @@
-AJV=	./node_modules/.bin/ajv
+AJV=	./node_modules/.bin/ajv --strict=false
 
 
-test:: check-formatting compile-schemata
+test:: check-formatting compile
 
-compile-schemata::
+compile::
 	@echo "Compiling schemata..."
-	-$(AJV) compile -s "DGC.*.json"
+	-$(AJV) compile -r "DGC.*.schema.json" -s "DGC.schema.json"
 
 check-formatting::
 	@echo "Checking JSON formatting..."
