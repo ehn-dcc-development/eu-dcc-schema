@@ -13,5 +13,5 @@ jobs:
       run: sudo apt-get install jq nodejs
     - name: Install AJV
       run: make install-ajv
-    - name: Check schema
-      run: make check
+    - name: Run tests
+      run: make test

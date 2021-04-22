@@ -1,16 +1,17 @@
 AJV=	./node_modules/.bin/ajv
 
 
-check:: check-formatting check-schemata 
+test:: check-formatting compile-schemata
 
-check-schemata::
+compile-schemata::
+	@echo "Compiling schemata..."
 	$(AJV) compile -s DGC.schema.json
 	$(AJV) compile -s DGC.Core.Types.schema.json
 	$(AJV) compile -s DGC.Types.schema.json
 	$(AJV) compile -s DGC.ValueSets.schema.json
 
 check-formatting::
-	@echo "Checking formatting..."
+	@echo "Checking JSON formatting..."
 	@for file in *.json; do \
 		jq . <$$file >$$file.tmp; \
 		if ! cmp $$file $$file.tmp; then \
