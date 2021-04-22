@@ -33,7 +33,7 @@
           "type": "string",
           "maxLength": 50,
           "examples": [
-            "Červenková Panklová"
+            "d'Červenková Panklová"
           ]
         },
         "fnt": {
@@ -42,7 +42,7 @@
           "type": "string",
           "maxLength": 50,
           "examples": [
-            "CERVENKOVA<<PANKLOVA"
+            "DCERVENKOVA<PANKLOVA"
           ]
         },
         "gn": {
@@ -51,7 +51,7 @@
           "type": "string",
           "maxLength": 50,
           "examples": [
-            "Jiřina Alena"
+            "Jiřina-Maria Alena"
           ]
         },
         "gnt": {
@@ -61,7 +61,7 @@
           "maxLength": 50,
           "$comment": "SematicSG: ICAO transliterated has max length of?",
           "examples": [
-            "JIRINA<<ALENA"
+            "JIRINA<MARIA<ALENA"
           ]
         }
       }

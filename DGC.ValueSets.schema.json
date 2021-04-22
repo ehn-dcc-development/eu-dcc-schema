@@ -6,104 +6,94 @@
   "$defs": {
     "disease-agent-targeted": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1",
-      "type": "object",
-      "required": ["code", "system"],
-      "oneOf": [
-        {"code": { "const": "840539006"}, "system": { "const": "2.16.840.1.113883.6.96" }, "version": {"const": "2021-01-31"}}
-      ]
+      "type": "string",
+      "required": [ "code" ],
+      "enum": [ "840539006" ]
     },
     "vaccine-prophylaxis": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.2",
-      "type": "object",
-      "required": ["code"],
-      "oneOf": [
-        { "code": { "const": "1119305005"}},
-        { "code": { "const": "1119349007"}},
-        { "code": { "const": "J07BX03"}}
+      "type": "string",
+      "enum": [
+        "1119305005",
+        "1119349007",
+        "J07BX03"
       ]
     },
     "vaccine-medicinal-product": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3",
-      "type": "object",
-      "required": ["code"],
-      "oneOf": [
-        { "code": { "const": "EU/1/20/1528"}},
-        { "code": { "const": "EU/1/20/1507"}},
-        { "code": { "const": "EU/1/21/1529"}},
-        { "code": { "const": "EU/1/20/1525"}},
-        { "code": { "const": "CVnCoV"}},
-        { "code": { "const": "NVX-CoV2373"}},
-        { "code": { "const": "Sputnik-V"}},
-        { "code": { "const": "Convidecia"}},
-        { "code": { "const": "EpiVacCorona"}},
-        { "code": { "const": "BBIBP-CorV"}},
-        { "code": { "const": "Inactivated-SARS-CoV-2-Vero-Cell"}},
-        { "code": { "const": "CoronaVac"}},
-        { "code": { "const": "Covaxin"}}
+      "type": "string",
+        "enum": [
+          "EU/1/20/1528",
+          "EU/1/20/1507",
+          "EU/1/21/1529",
+          "EU/1/20/1525",
+          "CVnCoV",
+          "NVX-CoV2373",
+          "Sputnik-V",
+          "Convidecia",
+          "EpiVacCorona",
+          "BBIBP-CorV",
+          "Inactivated-SARS-CoV-2-Vero-Cell",
+          "CoronaVac",
+          "Covaxin"
       ]
     },
     "vaccine-mah-manf": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.4",
-      "type": "object",
-      "required": ["code"],
-      "oneOf": [
-        { "code": { "const": "ORG-100001699"}},
-        { "code": { "const": "ORG-100030215"}},
-        { "code": { "const": "ORG-100001417"}},
-        { "code": { "const": "ORG-100031184"}},
-        { "code": { "const": "ORG-100006270"}},
-        { "code": { "const": "ORG-100013793"}},
-        { "code": { "const": "ORG-100020693"}},
-        { "code": { "const": "ORG-100020693"}},
-        { "code": { "const": "ORG-100010771"}},
-        { "code": { "const": "ORG-100024420"}},
-        { "code": { "const": "ORG-100032020"}},
-        { "code": { "const": "Gamaleya-Research-Institute"}},
-        { "code": { "const": "Vector-Institute"}},
-        { "code": { "const": "Sinovac-Biotech"}},
-        { "code": { "const": "Bharat-Biotech"}}
+      "type": "string",
+      "enum": [
+        "ORG-100001699",
+        "ORG-100030215",
+        "ORG-100001417",
+        "ORG-100031184",
+        "ORG-100006270",
+        "ORG-100013793",
+        "ORG-100020693",
+        "ORG-100020693",
+        "ORG-100010771",
+        "ORG-100024420",
+        "ORG-100032020",
+        "Gamaleya-Research-Institute",
+        "Vector-Institute",
+        "Sinovac-Biotech",
+        "Bharat-Biotech"
       ]
     },
     "test-manf" : {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.8",
-      "type": "object",
-      "required": ["code"],
-      "oneOf": [
-        { "code": {"const": "1232" }},
-        { "code": {"const": "1304"}},
-        { "code": {"const": "1065" }},
-        { "code": {"const": "1331" }},
-        { "code": {"const": "1484" }},
-        { "code": {"const": "1242" }},
-        { "code": {"const": "1223" }},
-        { "code": {"const": "1173" }},
-        { "code": {"const": "1244" }},
-        { "code": {"const": "1360" }},
-        { "code": {"const": "1363" }},
-        { "code": {"const": "1767" }},
-        { "code": {"const": "1333" }},
-        { "code": {"const": "1268" }},
-        { "code": {"const": "1180" }},
-        { "code": {"const": "1481" }},
-        { "code": {"const": "1162" }},
-        { "code": {"const": "1271" }},
-        { "code": {"const": "1341" }},
-        { "code": {"const": "1097" }},
-        { "code": {"const": "1489" }},
-        { "code": {"const": "344"  }},
-        { "code": {"const": "345"  }},
-        { "code": {"const": "1218" }},
-        { "code": {"const": "1278" }},
-        { "code": {"const": "1343" }}
-      ]
-    },
+      "type": "string",
+      "enum": [
+        "1232",
+        "1304",
+        "1065",
+        "1331",
+        "1484",
+        "1242",
+        "1223",
+        "1173",
+        "1244",
+        "1360",
+        "1363",
+        "1767",
+        "1333",
+        "1268",
+        "1180",
+        "1481",
+        "1162",
+        "1271",
+        "1097",
+        "1489",
+        "344",
+        "345",
+        "1218",
+        "1343"
+      ]    },
     "test-result": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9",
-      "type": "object",
-      "required": ["code"],
-      "oneOf": [
-        { "code": { "const": "260415000"}},
-        { "code": { "const": "260373001"}}
+      "type": "string",
+      "enum": [
+        "260415000",
+        "260373001"
       ]
     }
   }
