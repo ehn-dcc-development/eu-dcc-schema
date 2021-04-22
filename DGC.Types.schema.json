@@ -24,6 +24,7 @@
         "ci"
       ],
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "tg": {
           "description": "disease or agent targeted",
@@ -82,6 +83,7 @@
         "ci"
       ],
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "tg": {
           "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
@@ -143,6 +145,7 @@
         "ci"
       ],
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "tg": {
           "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"

@@ -3,6 +3,7 @@
   "$id": "https://ec.europa.eu/dgc/DGC.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
+  "additionalProperties": false,
   "required": [
     "nam",
     "dob",

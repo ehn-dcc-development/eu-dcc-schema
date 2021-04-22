@@ -26,6 +26,7 @@
         "fnt"
       ],
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "fn": {
           "title": "Family name",
