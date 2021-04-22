@@ -9,7 +9,7 @@ compile::
 
 check-formatting::
 	@echo "Checking JSON formatting..."
-	@for file in *.json; do \
+	@for file in DGC.*.json example-*.json; do \
 		jq . <$$file >$$file.tmp; \
 		if ! cmp $$file $$file.tmp; then \
 			echo "Please reformat $$file"; \
