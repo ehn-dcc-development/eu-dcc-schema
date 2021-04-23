@@ -18,7 +18,7 @@ compile::
 
 check-formatting::
 	@echo "Checking JSON formatting..."
-	@for file in $(SCHEMATA) Lookup-tables/*.json example-*.json; do \
+	@for file in $(SCHEMATA) Lookup-tables/*.json examples/*.json; do \
 		jq . <$$file >$$file.tmp; \
 		if ! cmp $$file $$file.tmp; then \
 			echo "Please reformat $$file"; \
@@ -27,12 +27,12 @@ check-formatting::
 	done
 
 validate-examples::
-	-$(AJV) validate -r "DGC.*.schema.json" -s "DGC.schema.json" -d "example-*.json"
+	-$(AJV) validate -r "DGC.*.schema.json" -s "DGC.schema.json" -d "examples/*.json"
 
 $(MERGED): $(SCHEMATA)
 	python3 merge.py $(SCHEMATA) | jq . > $@
 	-$(AJV) compile -s $@
-	-$(AJV) validate -s $@ -d "example-*.json"
+	-$(AJV) validate -s $@ -d "examples/*.json"
 
 reformat::
 	for file in *.json Lookup-tables/*.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
