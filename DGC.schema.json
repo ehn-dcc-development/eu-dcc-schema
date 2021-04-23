@@ -1,15 +1,24 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://ec.europa.eu/dgc/DGC.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
   "required": [
+    "ver",
     "nam",
-    "dob",
-    "dsc"
+    "dob"
   ],
   "type": "object",
   "properties": {
+    "ver": {
+      "title": "Schema version",
+      "description": "Version of the schema, according to Semantic versioning (ISO, https://semver.org/ version 2.0.0 or newer)",
+      "type": "string",
+      "pattern": "^\\d+.\\d+.\\d+$",
+      "examples": [
+        "1.0.0"
+      ]
+    },
     "nam": {
       "description": "Surname(s), given name(s) - in that order",
       "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/person_name"
@@ -23,10 +32,6 @@
       "examples": [
         "1979-04-14"
       ]
-    },
-    "dsc": {
-      "description": "Document Signing Certificate: 8 bytes",
-      "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/dsc"
     },
     "v": {
       "description": "Vaccination Group",

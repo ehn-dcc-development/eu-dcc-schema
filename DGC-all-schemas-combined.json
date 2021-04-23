@@ -1,11 +1,64 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ec.europa.eu/dgc/DGC.schema.json",
   "title": "EU DGC",
-  "$defs": {
-    "dob_valid_date_range": {
-      "description": "Date type ISO 8601 - date part only, restricted to range 1900-2099",
+  "description": "EU Digital Green Certificate",
+  "required": [
+    "ver",
+    "nam",
+    "dob"
+  ],
+  "type": "object",
+  "properties": {
+    "ver": {
+      "title": "Schema version",
+      "description": "Version of the schema, according to Semantic versioning (ISO, https://semver.org/ version 2.0.0 or newer)",
       "type": "string",
-      "pattern": "[19|20][0-9][0-9]-(0[1-9]|1[0-2])-([0-2][1-9]|3[0|1])"
+      "pattern": "^\\d+.\\d+.\\d+$",
+      "examples": [
+        "1.0.0"
+      ]
     },
+    "nam": {
+      "description": "Surname(s), given name(s) - in that order",
+      "$ref": "#/$defs/person_name"
+    },
+    "dob": {
+      "title": "Date of birth",
+      "description": "Date of Birth of the person addressed in the DGC. ISO 8601 date format restricted to range 1900-2099",
+      "type": "string",
+      "format": "date",
+      "pattern": "[19|20][0-9][0-9]-(0[1-9]|1[0-2])-([0-2][1-9]|3[0|1])",
+      "examples": [
+        "1979-04-14"
+      ]
+    },
+    "v": {
+      "description": "Vaccination Group",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/vaccination_entry"
+      },
+      "minItems": 1
+    },
+    "t": {
+      "description": "Test Group",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/test_entry"
+      },
+      "minItems": 1
+    },
+    "r": {
+      "description": "Recovery Group",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/recovery_entry"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
     "dose_posint": {
       "description": "Dose Number / Total doses in Series: positive integer, range: [1,9]",
       "type": "integer",
@@ -42,6 +95,7 @@
           "title": "Standardised family name",
           "description": "The family name(s) of the person transliterated",
           "type": "string",
+          "pattern": "^[A-Z<]*$",
           "maxLength": 50,
           "examples": [
             "DCERVENKOVA<PANKLOVA"
@@ -60,6 +114,7 @@
           "title": "Standardised given name",
           "description": "The given name(s) of the person transliterated",
           "type": "string",
+          "pattern": "^[A-Z<]*$",
           "maxLength": 50,
           "$comment": "SematicSG: ICAO transliterated has max length of?",
           "examples": [
@@ -71,13 +126,7 @@
     "certificate_id": {
       "description": "Certificate Identifier, UVCI",
       "type": "string",
-      "maxLength": 50,
-      "unique": true
-    },
-    "dsc": {
-      "type": "string",
-      "maxLength": 16,
-      "contentMediaType": "text/plain"
+      "maxLength": 50
     },
     "vaccination_entry": {
       "description": "Vaccination Entry",
@@ -233,12 +282,12 @@
         "df": {
           "description": "ISO 8601 Date: Certificate Valid From",
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "du": {
           "description": "Certificate Valid Until",
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "ci": {
           "description": "Unique Certificate Identifier, UVCI",
@@ -249,9 +298,6 @@
     "disease-agent-targeted": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1",
       "type": "string",
-      "required": [
-        "code"
-      ],
       "enum": [
         "840539006"
       ]
@@ -342,51 +388,6 @@
         "260415000",
         "260373001"
       ]
-    }
-  },
-  "description": "EU Digital Green Certificate",
-  "required": [
-    "nam",
-    "dob",
-    "dsc"
-  ],
-  "type": "object",
-  "properties": {
-    "nam": {
-      "description": "Surname(s), given name(s) - in that order",
-      "$ref": "#/$defs/person_name"
-    },
-    "dob": {
-      "description": "Date of Birth, ISO 8601",
-      "$ref": "#/$defs/dob_valid_date_range"
-    },
-    "dsc": {
-      "description": "Document Signing Certificate: 8 bytes",
-      "$ref": "#/$defs/dsc"
-    },
-    "v": {
-      "description": "Vaccination Group",
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/vaccination_entry"
-      },
-      "minEntry": 1
-    },
-    "t": {
-      "description": "Test Group",
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/test_entry"
-      },
-      "minEntry": 1
-    },
-    "r": {
-      "description": "Recovery Group",
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/recovery_entry"
-      },
-      "minEntry": 1
     }
   }
 }
