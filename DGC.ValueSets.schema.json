@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate Value Set Data Types",
