@@ -4,11 +4,6 @@
   "title": "EU DGC",
   "description": "EU Digital Green Certificate Composite Data Types",
   "$defs": {
-    "dsc": {
-      "type": "string",
-      "maxLength": 16,
-      "contentMediaType": "text/plain"
-    },
     "vaccination_entry": {
       "description": "Vaccination Entry",
       "required": [

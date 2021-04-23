@@ -6,8 +6,7 @@
   "required": [
     "ver",
     "nam",
-    "dob",
-    "dsc"
+    "dob"
   ],
   "type": "object",
   "properties": {
@@ -33,10 +32,6 @@
       "examples": [
         "1979-04-14"
       ]
-    },
-    "dsc": {
-      "description": "Document Signing Certificate: 8 bytes",
-      "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/dsc"
     },
     "v": {
       "description": "Vaccination Group",
