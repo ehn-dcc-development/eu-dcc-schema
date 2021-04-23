@@ -22,19 +22,19 @@
       "properties": {
         "tg": {
           "description": "disease or agent targeted",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+          "type": "string"
         },
         "vp": {
           "description": "vaccine or prophylaxis",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-prophylaxis"
+          "type": "string"
         },
         "mp": {
           "description": "vaccine medicinal product",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-medicinal-product"
+          "type": "string"
         },
         "ma": {
           "description": "Marketing Authorization Holder - if no MAH present, then manufacturer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-mah-manf"
+          "type": "string"
         },
         "dn": {
           "description": "Dose Number",
@@ -79,7 +79,8 @@
       "type": "object",
       "properties": {
         "tg": {
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+          "description": "disease or agent targeted",
+          "type": "string"
         },
         "tt": {
           "description": "Type of Test",
@@ -91,7 +92,7 @@
         },
         "ma": {
           "description": "RAT Test name and manufacturer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/test-manf"
+          "type": "string"
         },
         "sc": {
           "description": "Date/Time of Sample Collection",
@@ -105,7 +106,8 @@
         },
         "tr": {
           "description": "Test Result",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/test-result"
+          "type": "string",
+          "maxLength": 50
         },
         "tc": {
           "description": "Testing Centre",
@@ -140,7 +142,8 @@
       "type": "object",
       "properties": {
         "tg": {
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+          "description": "disease or agent targeted",
+          "type": "string"
         },
         "fr": {
           "description": "ISO 8601 Date of First Positive Test Result",

@@ -1,8 +1,6 @@
 SCHEMATA=	DGC.schema.json \
 		DGC.Core.Types.schema.json \
-		DGC.Types.schema.json \
-		DGC.ValueSets.schema.json
-
+		DGC.Types.schema.json
 MERGED=		DGC-all-schemas-combined.json
 
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020
