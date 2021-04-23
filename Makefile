@@ -2,7 +2,6 @@ SCHEMATA=	DGC.schema.json \
 		DGC.Core.Types.schema.json \
 		DGC.Types.schema.json \
 		DGC.ValueSets.schema.json
-
 MERGED=		DGC-all-schemas-combined.json
 
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020
@@ -37,7 +36,7 @@ $(MERGED): $(SCHEMATA)
 	-$(AJV) validate -s $@ -d "examples/*.json"
 
 reformat::
-	for file in *.json Lookup-tables/*.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
+	for file in *.json Lookup-tables/*.json valuesets/*.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
 
 install-ajv:
 	npm install ajv ajv-cli ajv-formats
