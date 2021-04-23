@@ -5,7 +5,7 @@ SCHEMATA=	DGC.schema.json \
 
 MERGED=		DGC-all-schemas-combined.json
 
-AJV=		./node_modules/.bin/ajv -c ajv-formats
+AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020
 
 
 test:: compile validate-examples check-formatting
