@@ -145,19 +145,19 @@
       "type": "object",
       "properties": {
         "tg": {
-          "description": "disease or agent targeted",
+          "description": "disease or agent targeted, allowed values per dataset disease-agent-targeted",
           "type": "string"
         },
         "vp": {
-          "description": "vaccine or prophylaxis",
+          "description": "vaccine or prophylaxis, allowed values per dataset vaccine-prophylaxis",
           "type": "string"
         },
         "mp": {
-          "description": "vaccine medicinal product",
+          "description": "vaccine medicinal product, allowed values per dataset vaccine-medicinal-product",
           "type": "string"
         },
         "ma": {
-          "description": "Marketing Authorization Holder - if no MAH present, then manufacturer",
+          "description": "Marketing Authorization Holder- if no MAH present, then manufacturer, allowed values per dataset vaccine-mah-manf",
           "type": "string"
         },
         "dn": {
@@ -203,11 +203,11 @@
       "type": "object",
       "properties": {
         "tg": {
-          "description": "disease or agent targeted",
+          "description": "disease or agent targeted, allowed values per dataset disease-agent-targeted",
           "type": "string"
         },
         "tt": {
-          "description": "Type of Test",
+          "description": "Type of Test, allowed values per dataset covid-19-lab-test-manufacturer-and-name",
           "type": "string"
         },
         "nm": {
@@ -215,7 +215,7 @@
           "type": "string"
         },
         "ma": {
-          "description": "RAT Test name and manufacturer",
+          "description": "RAT Test name and manufacturer, allowed values per dataset test-manf",
           "type": "string"
         },
         "sc": {
@@ -229,8 +229,9 @@
           "format": "date-time"
         },
         "tr": {
-          "description": "Test Result",
-          "type": "string"
+          "description": "Test Result, allowed values per dataset test-result",
+          "type": "string",
+          "maxLength": 50
         },
         "tc": {
           "description": "Testing Centre",
@@ -265,7 +266,7 @@
       "type": "object",
       "properties": {
         "tg": {
-          "description": "disease or agent targeted",
+          "description": "disease or agent targeted, allowed values per dataset covid-19-diseases",
           "type": "string"
         },
         "fr": {
