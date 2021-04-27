@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ec.europa.eu/dgc/DGC.Types.schema.json",
+  "$id": "https://id.uvci.eu/DGC.Types.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate Composite Data Types",
   "$defs": {
@@ -22,27 +22,27 @@
       "properties": {
         "tg": {
           "description": "disease or agent targeted",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
         },
         "vp": {
           "description": "vaccine or prophylaxis",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-prophylaxis"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/vaccine-prophylaxis"
         },
         "mp": {
           "description": "vaccine medicinal product",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-medicinal-product"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/vaccine-medicinal-product"
         },
         "ma": {
           "description": "Marketing Authorization Holder - if no MAH present, then manufacturer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/vaccine-mah-manf"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/vaccine-mah-manf"
         },
         "dn": {
           "description": "Dose Number",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/dose_posint"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/dose_posint"
         },
         "sd": {
           "description": "Total Series of Doses",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/dose_posint"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/dose_posint"
         },
         "dt": {
           "description": "Date of Vaccination",
@@ -52,15 +52,15 @@
         },
         "co": {
           "description": "Country of Vaccination",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/country_vt"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/issuer"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/issuer"
         },
         "ci": {
           "description": "Unique Certificate Identifier: UVCI",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/certificate_id"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/certificate_id"
         }
       }
     },
@@ -79,7 +79,7 @@
       "type": "object",
       "properties": {
         "tg": {
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
         },
         "tt": {
           "description": "Type of Test",
@@ -91,7 +91,7 @@
         },
         "ma": {
           "description": "RAT Test name and manufacturer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/test-manf"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/test-manf"
         },
         "sc": {
           "description": "Date/Time of Sample Collection",
@@ -105,7 +105,7 @@
         },
         "tr": {
           "description": "Test Result",
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/test-result"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/test-result"
         },
         "tc": {
           "description": "Testing Centre",
@@ -114,15 +114,15 @@
         },
         "co": {
           "description": "Country of Test",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/country_vt"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/issuer"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/issuer"
         },
         "ci": {
           "description": "Unique Certificate Identifier, UVCI",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/certificate_id"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/certificate_id"
         }
       }
     },
@@ -140,7 +140,7 @@
       "type": "object",
       "properties": {
         "tg": {
-          "$ref": "https://ec.europa.eu/dgc/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/disease-agent-targeted"
         },
         "fr": {
           "description": "ISO 8601 Date of First Positive Test Result",
@@ -149,11 +149,11 @@
         },
         "co": {
           "description": "Country of Test",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/country_vt"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/issuer"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/issuer"
         },
         "df": {
           "description": "ISO 8601 Date: Certificate Valid From",
@@ -167,7 +167,7 @@
         },
         "ci": {
           "description": "Unique Certificate Identifier, UVCI",
-          "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/certificate_id"
+          "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/certificate_id"
         }
       }
     }

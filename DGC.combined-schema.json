@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ec.europa.eu/dgc/DGC.schema.json",
+  "$id": "https://id.uvci.eu/DGC.combined-schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
   "required": [

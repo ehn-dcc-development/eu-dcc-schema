@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ec.europa.eu/dgc/DGC.schema.json",
+  "$id": "https://id.uvci.eu/DGC.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
   "required": [
@@ -21,7 +21,7 @@
     },
     "nam": {
       "description": "Surname(s), given name(s) - in that order",
-      "$ref": "https://ec.europa.eu/dgc/DGC.Core.Types.schema.json#/$defs/person_name"
+      "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/person_name"
     },
     "dob": {
       "title": "Date of birth",
@@ -37,7 +37,7 @@
       "description": "Vaccination Group",
       "type": "array",
       "items": {
-        "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/vaccination_entry"
+        "$ref": "https://id.uvci.eu/DGC.Types.schema.json#/$defs/vaccination_entry"
       },
       "minItems": 1
     },
@@ -45,7 +45,7 @@
       "description": "Test Group",
       "type": "array",
       "items": {
-        "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/test_entry"
+        "$ref": "https://id.uvci.eu/DGC.Types.schema.json#/$defs/test_entry"
       },
       "minItems": 1
     },
@@ -53,7 +53,7 @@
       "description": "Recovery Group",
       "type": "array",
       "items": {
-        "$ref": "https://ec.europa.eu/dgc/DGC.Types.schema.json#/$defs/recovery_entry"
+        "$ref": "https://id.uvci.eu/DGC.Types.schema.json#/$defs/recovery_entry"
       },
       "minItems": 1
     }
