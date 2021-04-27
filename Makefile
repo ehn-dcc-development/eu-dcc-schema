@@ -4,6 +4,8 @@ SCHEMATA=	DGC.schema.json \
 		DGC.ValueSets.schema.json
 MERGED=		DGC-all-schemas-combined.json
 
+JSON_FILES=	*.json examples/*.json valuesets/*.json
+
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020 --strict=false
 
 
@@ -19,7 +21,7 @@ compile::
 
 check-formatting::
 	@echo "Checking JSON formatting..."
-	@for file in $(SCHEMATA) examples/*.json; do \
+	@for file in $(JSON_FILES); do \
 		jq . <$$file >$$file.tmp; \
 		if ! cmp $$file $$file.tmp; then \
 			echo "Please reformat $$file"; \
@@ -38,7 +40,7 @@ $(MERGED): $(SCHEMATA)
 	-$(AJV) compile -s $@
 
 reformat::
-	for file in *.json valuesets/*.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
+	for file in $(JSON_FILES); do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
 
 install-ajv:
 	npm install ajv ajv-cli ajv-formats
