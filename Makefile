@@ -36,7 +36,6 @@ validate-valuesets::
 $(MERGED): $(SCHEMATA)
 	python3 merge.py $(SCHEMATA) | jq . > $@
 	-$(AJV) compile -s $@
-	-$(AJV) validate -s $@ -d "examples/*.json"
 
 reformat::
 	for file in *.json valuesets/*.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
