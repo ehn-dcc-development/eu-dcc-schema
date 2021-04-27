@@ -7,7 +7,7 @@ MERGED=		DGC-all-schemas-combined.json
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020
 
 
-test:: compile validate-examples check-formatting $(MERGED)
+test:: compile validate-valuesets validate-examples check-formatting $(MERGED)
 	$(AJV) test -s $(MERGED) -d "examples/*.json" --valid
 	$(AJV) test -s $(MERGED) -d "test/invalid/*.json" --invalid
 
@@ -29,6 +29,9 @@ check-formatting::
 
 validate-examples::
 	-$(AJV) validate -r "DGC.*.schema.json" -s "DGC.schema.json" -d "examples/*.json"
+
+validate-valuesets::
+	-$(AJV) validate -s "valueset.json" -d "valuesets/*.json"
 
 $(MERGED): $(SCHEMATA)
 	python3 merge.py $(SCHEMATA) | jq . > $@
