@@ -19,7 +19,7 @@ compile::
 
 check-formatting::
 	@echo "Checking JSON formatting..."
-	@for file in $(SCHEMATA) Lookup-tables/*.json examples/*.json; do \
+	@for file in $(SCHEMATA) examples/*.json; do \
 		jq . <$$file >$$file.tmp; \
 		if ! cmp $$file $$file.tmp; then \
 			echo "Please reformat $$file"; \
@@ -36,7 +36,7 @@ $(MERGED): $(SCHEMATA)
 	-$(AJV) validate -s $@ -d "examples/*.json"
 
 reformat::
-	for file in *.json Lookup-tables/*.json valuesets/*.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
+	for file in *.json valuesets/*.json; do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
 
 install-ajv:
 	npm install ajv ajv-cli ajv-formats
