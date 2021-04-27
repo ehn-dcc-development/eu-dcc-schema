@@ -1,8 +1,9 @@
+import argparse
 import json
 import re
 import sys
 
-PATTERNS = [re.compile(r"^https://ec\.europa\.eu/dgc/DGC\..+\.schema\.json(.*)")]
+PATTERNS = [re.compile(r"^https://id\.uvci\.eu/.+\.schema\.json(.+)")]
 
 
 def load_json(filename: str):
@@ -29,7 +30,22 @@ def rewrite_refs(data):
 def main():
     """Main function"""
 
-    main_fn = sys.argv[1]
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--id",
+        metavar="URL",
+        help="Merged schema ID",
+        required=True,
+    )
+    parser.add_argument(
+        "sources",
+        nargs="*",
+        metavar="URL",
+        help="Schema source",
+    )
+    args = parser.parse_args()
+
+    main_fn = args.sources.pop(0)
 
     schema = load_json(main_fn)
     schema = rewrite_refs(schema)
@@ -37,9 +53,11 @@ def main():
     if "$defs" not in schema:
         schema["$defs"] = {}
 
-    for fn in sys.argv[1:]:
+    for fn in args.sources:
         extra = rewrite_refs(load_json(fn))
         schema["$defs"].update(extra.get("$defs", {}))
+
+    schema["$id"] = args.id
 
     print(json.dumps(schema, indent=4))
 

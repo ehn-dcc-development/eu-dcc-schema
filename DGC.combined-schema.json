@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ec.europa.eu/dgc/DGC.schema.json",
+  "$id": "https://id.uvci.eu/DGC.combined-schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
   "required": [
@@ -298,96 +298,32 @@
     "disease-agent-targeted": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1",
       "type": "string",
-      "enum": [
-        "840539006"
-      ]
+      "valueset-uri": "valuesets/disease-agent-targeted.json"
     },
     "vaccine-prophylaxis": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.2",
       "type": "string",
-      "enum": [
-        "1119305005",
-        "1119349007",
-        "J07BX03"
-      ]
+      "valueset-uri": "valuesets/vaccine-prophylaxis.json"
     },
     "vaccine-medicinal-product": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3",
       "type": "string",
-      "enum": [
-        "EU/1/20/1528",
-        "EU/1/20/1507",
-        "EU/1/21/1529",
-        "EU/1/20/1525",
-        "CVnCoV",
-        "NVX-CoV2373",
-        "Sputnik-V",
-        "Convidecia",
-        "EpiVacCorona",
-        "BBIBP-CorV",
-        "Inactivated-SARS-CoV-2-Vero-Cell",
-        "CoronaVac",
-        "Covaxin"
-      ]
+      "valueset-uri": "valuesets/vaccine-medicinal-product.json"
     },
     "vaccine-mah-manf": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.4",
       "type": "string",
-      "enum": [
-        "ORG-100001699",
-        "ORG-100030215",
-        "ORG-100001417",
-        "ORG-100031184",
-        "ORG-100006270",
-        "ORG-100013793",
-        "ORG-100020693",
-        "ORG-100020693",
-        "ORG-100010771",
-        "ORG-100024420",
-        "ORG-100032020",
-        "Gamaleya-Research-Institute",
-        "Vector-Institute",
-        "Sinovac-Biotech",
-        "Bharat-Biotech"
-      ]
+      "valueset-uri": "valuesets/vaccine-mah-manf.json"
     },
     "test-manf": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.8",
       "type": "string",
-      "enum": [
-        "1232",
-        "1304",
-        "1065",
-        "1331",
-        "1484",
-        "1242",
-        "1223",
-        "1173",
-        "1244",
-        "1360",
-        "1363",
-        "1767",
-        "1333",
-        "1268",
-        "1180",
-        "1481",
-        "1162",
-        "1271",
-        "1097",
-        "1489",
-        "344",
-        "345",
-        "1218",
-        "1343"
-      ]
+      "valueset-uri": "valuesets/test-manf.json"
     },
     "test-result": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9",
       "type": "string",
-      "enum": [
-        "260415000",
-        "260373001"
-      ]
+      "valueset-uri": "valuesets/test-results.json"
     }
   }
 }
