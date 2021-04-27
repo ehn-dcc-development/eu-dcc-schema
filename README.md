@@ -18,13 +18,13 @@ With the defintions in:
 
 For easy testing - they are combined in:
 
-- DGC-all-schemas-combined.json (not built automatically yet)
+- DGC.combined-schema.json
 
 But the above 4 files are always leading.
 
 The files:
 
-- example*.json
+- examples/*.json
 
 are examples created in vitro & very artificial.
 
