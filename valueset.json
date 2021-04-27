@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EU DGC Value Sets",
+  "required": [
+    "valueSetId",
+    "valueSetDate",
+    "valueSetValues"
+  ],
+  "type": "object",
+  "properties": {
+    "valueSetId": {
+      "title": "Value Set Identifier",
+      "type": "string"
+    },
+    "valueSetDate": {
+      "title": "Value Set Version",
+      "type": "string",
+      "format": "date"
+    },
+    "valueSetValues": {
+      "title": "Allowed values in Value Set",
+      "type": "object"
+    }
+  }
+}
