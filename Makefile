@@ -8,7 +8,9 @@ MERGED=		DGC-all-schemas-combined.json
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020
 
 
-test:: compile validate-examples check-formatting
+test:: compile validate-examples check-formatting $(MERGED)
+	$(AJV) test -s $(MERGED) -d "examples/*.json" --valid
+	$(AJV) test -s $(MERGED) -d "test/invalid/*.json" --invalid
 
 merge: $(MERGED)
 
