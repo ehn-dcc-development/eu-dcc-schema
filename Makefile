@@ -4,7 +4,7 @@ SCHEMATA=	DGC.schema.json \
 		DGC.ValueSets.schema.json
 MERGED=		DGC-all-schemas-combined.json
 
-AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020
+AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020 --strict=false
 
 
 test:: compile validate-valuesets validate-examples check-formatting $(MERGED)

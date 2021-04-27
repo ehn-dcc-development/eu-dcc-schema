@@ -7,32 +7,32 @@
     "disease-agent-targeted": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1",
       "type": "string",
-      "$comment": "valuesets/disease-agent-targeted.json"
+      "valueset-uri": "valuesets/disease-agent-targeted.json"
     },
     "vaccine-prophylaxis": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.2",
       "type": "string",
-      "$comment": "valuesets/vaccine-prophylaxis.json"
+      "valueset-uri": "valuesets/vaccine-prophylaxis.json"
     },
     "vaccine-medicinal-product": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3",
       "type": "string",
-      "$comment": "valuesets/vaccine-medicinal-product.json"
+      "valueset-uri": "valuesets/vaccine-medicinal-product.json"
     },
     "vaccine-mah-manf": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.4",
       "type": "string",
-      "$comment": "valuesets/vaccine-mah-manf.json"
+      "valueset-uri": "valuesets/vaccine-mah-manf.json"
     },
     "test-manf": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.8",
       "type": "string",
-      "$comment": "valuesets/test-manf.json"
+      "valueset-uri": "valuesets/test-manf.json"
     },
     "test-result": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9",
       "type": "string",
-      "$comment": "valuesets/test-results.json"
+      "valueset-uri": "valuesets/test-results.json"
     }
   }
 }
