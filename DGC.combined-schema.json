@@ -3,6 +3,7 @@
   "$id": "https://id.uvci.eu/DGC.combined-schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
+  "$comment": "Schema version 1.0.0",
   "required": [
     "ver",
     "nam",
@@ -116,7 +117,6 @@
           "type": "string",
           "pattern": "^[A-Z<]*$",
           "maxLength": 50,
-          "$comment": "SematicSG: ICAO transliterated has max length of?",
           "examples": [
             "JIRINA<MARIA<ALENA"
           ]
@@ -124,7 +124,7 @@
       }
     },
     "certificate_id": {
-      "description": "Certificate Identifier, UVCI",
+      "description": "Certificate Identifier, format as per UVCI: Annex 2 in  https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf",
       "type": "string",
       "maxLength": 50
     },
