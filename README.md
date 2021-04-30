@@ -12,6 +12,9 @@ The schema is intended to support different use cases that EU Member States requ
 
 The schema in conjunction with business rules (which may also be specific to a Member State) shall ensure conformity to the EU legislation, whereby the burden of conformity lies with the business rules and the DGC JSON schema plays a supporting role in allowing the data to be serialized and de-serialized in a flexible yet structured manner.
 
+## Frequently Asked Questions
+
+A list of [frequently asked questions](FAQ.md) is available.
 
 ## Files
 
