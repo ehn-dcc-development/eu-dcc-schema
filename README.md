@@ -1,8 +1,17 @@
 # Digital Green Certificate Schema
 
+**N.B. The schema is work in progress**
+
 This repository contains a schema for the EU Digital Green Certificate.
 
-**N.B. The schema is work in progress**
+## Introduction
+
+The Digital Green Certificate (DGC) JSON schema is provided as a mechanism for supporting the serialization and  deserialization of the DGC payload, initially with focus on generation of a 2D barcode (QR Code).
+
+The schema is intended to support different use cases that EU Member States require. The schema shall also support conformity to the [EU legislation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0130) regarding  what shall present in a certificate to ensure freedom of movement with EU  Member States and also to allow interoperability with countries outside the EU zone.
+
+The schema in conjunction with business rules (which may also be specific to a Member State) shall ensure conformity to the EU legislation, whereby the burden of conformity lies with the business rules and the DGC JSON schema plays a supporting role in allowing the data to be serialized and de-serialized in a flexible yet structured manner.
+
 
 ## Files
 
