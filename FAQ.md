@@ -25,10 +25,10 @@ plays a supporting role in allowing the data to be serialized and de-serialized 
 ### What do the typical processing stages look like for:
 
 #### Issuance of QR
-![QR Generation](dgc_qr_generate.png)
+![QR Generation](images/dgc_qr_generate.png)
 
 #### Verification of QR
-![QR Verification](dgc_qr_verify.png)
+![QR Verification](images/dgc_qr_verify.png)
 
 In both these cases there is a stage of processing in software in which business rules are applied. 
 Examples of actions you that may be present in business rules
