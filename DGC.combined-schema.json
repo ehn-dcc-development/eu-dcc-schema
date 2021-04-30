@@ -29,7 +29,6 @@
       "description": "Date of Birth of the person addressed in the DGC. ISO 8601 date format restricted to range 1900-2099",
       "type": "string",
       "format": "date",
-      "pattern": "[19|20][0-9][0-9]-(0[1-9]|1[0-2])-([0-2][1-9]|3[0|1])",
       "examples": [
         "1979-04-14"
       ]
