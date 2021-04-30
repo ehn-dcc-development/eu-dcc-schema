@@ -40,6 +40,8 @@ are examples created in vitro & very artificial.
 
 ## Implementation Notes
 
+A list of [frequently asked questions](https://github.com/ehn-digital-green-development/ehn-dgc-schema/wiki/FAQ) for implementors can be found in the [repostiory wiki](https://github.com/ehn-digital-green-development/ehn-dgc-schema/wiki).
+
 ### CBOR Encoding
 
 Concise Binary Object Representation (CBOR), specified in [RFC7049](https://tools.ietf.org/html/rfc7049), defined a number of major data types. The following types are RECOMMENDED to be used by parties creating electronic health certificates payloads:
