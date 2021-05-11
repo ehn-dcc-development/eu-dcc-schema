@@ -53,4 +53,6 @@ Concise Binary Object Representation (CBOR), specified in [RFC7049](https://tool
 - Arrays are encoded as CBOR major type 4, an array of data items.
 - Objects are encoded as CBOR major type 5, a map of pairs of data items.
 
+Timestamps (defined by JSON type `string` and format `date-time`) SHOULD be encoded as CBOR major type 3, a text string.
+
 Parties validating payloads are strongly advised to follow the robustness principle and be liberal in what you accept from others.
