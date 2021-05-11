@@ -46,13 +46,13 @@ A list of [Frequently Asked Questions](https://github.com/ehn-digital-green-deve
 
 ### CBOR Encoding
 
-Concise Binary Object Representation (CBOR), specified in [RFC7049](https://tools.ietf.org/html/rfc7049), defines a number of major data types. The following types are RECOMMENDED to be used by parties creating electronic health certificates payloads:
+Concise Binary Object Representation (CBOR), specified in [RFC7049](https://tools.ietf.org/html/rfc7049), defines a number of major data types. The following types are REQUIRED to be used by parties creating electronic health certificates payloads:
 
 - Integers are encoded as CBOR major type 0, an unsigned integer.
 - Strings are encoded as CBOR major type 3, a text string.
 - Arrays are encoded as CBOR major type 4, an array of data items.
 - Objects are encoded as CBOR major type 5, a map of pairs of data items.
 
-Timestamps (defined by JSON type `string` and format `date-time`) SHOULD be encoded as CBOR major type 3, a text string.
+Timestamps (defined by JSON type `string` and format `date-time`) MUST be encoded as CBOR major type 3, a text string, and formatted per [RFC 3339, section 5.6](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6), with tag 0 as specified by [RFC 8949, section 3.4.1](https://datatracker.ietf.org/doc/html/rfc8949#section-3.4.1).
 
 Parties validating payloads are strongly advised to follow the robustness principle and be liberal in what you accept from others.
