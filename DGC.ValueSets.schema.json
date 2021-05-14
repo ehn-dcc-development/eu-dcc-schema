@@ -33,6 +33,11 @@
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9",
       "type": "string",
       "valueset-uri": "valuesets/test-results.json"
+    },
+    "test-type": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.7",
+      "type": "string",
+      "valueset-uri": "valuesets/test-type.json"
     }
   }
 }
