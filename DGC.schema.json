@@ -3,7 +3,7 @@
   "$id": "https://id.uvci.eu/DGC.schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
-  "$comment": "Schema version 1.0.0",
+  "$comment": "Schema version 1.0.1",
   "required": [
     "ver",
     "nam",
