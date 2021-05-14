@@ -83,7 +83,7 @@
         },
         "tt": {
           "description": "Type of Test",
-          "type": "string"
+          "$ref": "https://id.uvci.eu/DGC.ValueSets.schema.json#/$defs/test-type"
         },
         "nm": {
           "description": "NAA Test Name",
