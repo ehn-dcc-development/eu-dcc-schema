@@ -2,8 +2,8 @@
 
 This repository contains a JSON schema for the EU Digital Green Certificate.
 
-**Schema version:** 1.0.1
-**Release date:** 2020-05-14
+**Schema version:** 1.1.0
+**Release date:** 2020-05-26
 
 
 ## Introduction
