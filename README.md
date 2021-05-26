@@ -53,6 +53,6 @@ Concise Binary Object Representation (CBOR), specified in [RFC7049](https://tool
 - Arrays are encoded as CBOR major type 4, an array of data items.
 - Objects are encoded as CBOR major type 5, a map of pairs of data items.
 
-Timestamps (defined by JSON type `string` and format `date-time`) MUST be encoded as CBOR major type 3, a text string, formatted per [RFC 3339, section 5.6](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6). If timestamps are tagged, they MUST be tagged 0 as specified by [RFC 8949, section 3.4.1](https://datatracker.ietf.org/doc/html/rfc8949#section-3.4.1).
+Timestamps (defined by JSON type `string` and format `date-time`) MUST be encoded as CBOR major type 3, a text string, formatted per [RFC 3339, section 5.6](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6), and SHOULD be tagged 0 as specified by [RFC 8949, section 3.4.1](https://datatracker.ietf.org/doc/html/rfc8949#section-3.4.1).
 
 Validators MUST be able to read both tagged and untagged data.
