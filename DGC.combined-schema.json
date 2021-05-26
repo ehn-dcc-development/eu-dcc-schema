@@ -3,7 +3,7 @@
   "$id": "https://id.uvci.eu/DGC.combined-schema.json",
   "title": "EU DGC",
   "description": "EU Digital Green Certificate",
-  "$comment": "Schema version 1.0.1",
+  "$comment": "Schema version 1.1.0",
   "required": [
     "ver",
     "nam",
@@ -17,7 +17,7 @@
       "type": "string",
       "pattern": "^\\d+.\\d+.\\d+$",
       "examples": [
-        "1.0.0"
+        "1.1.0"
       ]
     },
     "nam": {
@@ -28,10 +28,11 @@
       "title": "Date of birth",
       "description": "Date of Birth of the person addressed in the DGC. ISO 8601 date format restricted to range 1900-2099",
       "type": "string",
-      "format": "date",
-      "pattern": "(19|20)\\d{2}-\\d{2}-\\d{2}",
+      "pattern": "^(19|20)\\d\\d(-\\d\\d){0,2}$",
       "examples": [
-        "1979-04-14"
+        "1979-04-14",
+        "1950",
+        "1901-08"
       ]
     },
     "v": {
@@ -323,7 +324,7 @@
     "test-result": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9",
       "type": "string",
-      "valueset-uri": "valuesets/test-results.json"
+      "valueset-uri": "valuesets/test-result.json"
     },
     "test-type": {
       "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.7",
