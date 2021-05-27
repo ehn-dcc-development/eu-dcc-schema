@@ -1,6 +1,6 @@
 {
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
-  "valueSetDate": "2021-05-2",
+  "valueSetDate": "2021-05-27",
   "valueSetValues": {
     "1833": {
       "display": "AAZ-LMB, COVID-VIRO",
