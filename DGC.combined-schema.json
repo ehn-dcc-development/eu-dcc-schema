@@ -223,11 +223,6 @@
           "type": "string",
           "format": "date-time"
         },
-        "dr": {
-          "description": "Date/Time of Test Result",
-          "type": "string",
-          "format": "date-time"
-        },
         "tr": {
           "description": "Test Result",
           "$ref": "#/$defs/test-result"
@@ -268,7 +263,7 @@
           "$ref": "#/$defs/disease-agent-targeted"
         },
         "fr": {
-          "description": "ISO 8601 Date of First Positive Test Result",
+          "description": "ISO 8601 Date of First Positive NAA Test Result",
           "type": "string",
           "format": "date"
         },
