@@ -17,4 +17,4 @@ so you will need Python 3.6 or later if you wish to run the sample usage script.
 One file: `luhn_mod_n.py`. 
 
 The codeset defined in `_CODE_POINTS` is for the European Union (EU) 
-eHealthNetwork (eHN) Digital Green Certificate (DGC).
+eHealthNetwork (eHN) Digital Covid Certificate (DCC).

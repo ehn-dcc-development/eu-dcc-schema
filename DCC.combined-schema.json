@@ -1,9 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://id.uvci.eu/DGC.combined-schema.json",
-  "title": "EU DGC",
-  "description": "EU Digital Green Certificate",
-  "$comment": "Schema version 1.2.0",
+  "$id": "https://id.uvci.eu/DCC.combined-schema.json",
+  "title": "EU DCC",
+  "description": "EU Digital Covid Certificate",
+  "$comment": "Schema version 1.2.1",
   "required": [
     "ver",
     "nam",
@@ -17,7 +17,7 @@
       "type": "string",
       "pattern": "^\\d+.\\d+.\\d+$",
       "examples": [
-        "1.2.0"
+        "1.2.1"
       ]
     },
     "nam": {
@@ -26,7 +26,7 @@
     },
     "dob": {
       "title": "Date of birth",
-      "description": "Date of Birth of the person addressed in the DGC. ISO 8601 date format restricted to range 1900-2099",
+      "description": "Date of Birth of the person addressed in the DCC. ISO 8601 date format restricted to range 1900-2099",
       "type": "string",
       "pattern": "^(19|20)\\d\\d(-\\d\\d){0,2}$",
       "examples": [
@@ -292,37 +292,37 @@
       }
     },
     "disease-agent-targeted": {
-      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1",
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.1",
       "type": "string",
       "valueset-uri": "valuesets/disease-agent-targeted.json"
     },
     "vaccine-prophylaxis": {
-      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.2",
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.2",
       "type": "string",
       "valueset-uri": "valuesets/vaccine-prophylaxis.json"
     },
     "vaccine-medicinal-product": {
-      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3",
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.3",
       "type": "string",
       "valueset-uri": "valuesets/vaccine-medicinal-product.json"
     },
     "vaccine-mah-manf": {
-      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.4",
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.4",
       "type": "string",
       "valueset-uri": "valuesets/vaccine-mah-manf.json"
     },
     "test-manf": {
-      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.8",
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.8",
       "type": "string",
       "valueset-uri": "valuesets/test-manf.json"
     },
     "test-result": {
-      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9",
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.9",
       "type": "string",
       "valueset-uri": "valuesets/test-result.json"
     },
     "test-type": {
-      "description": "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.7",
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.7",
       "type": "string",
       "valueset-uri": "valuesets/test-type.json"
     }
