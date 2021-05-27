@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://id.uvci.eu/DGC.Core.Types.schema.json",
-  "title": "EU DGC",
-  "description": "EU Digital Green Certificate Core Data Types",
+  "$id": "https://id.uvci.eu/DCC.Core.Types.schema.json",
+  "title": "EU DCC",
+  "description": "EU Digital Covid Certificate Core Data Types",
   "$defs": {
     "dose_posint": {
       "description": "Dose Number / Total doses in Series: positive integer, range: [1,9]",
