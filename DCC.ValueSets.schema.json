@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://id.uvci.eu/DCC.ValueSets.schema.json",
+  "title": "EU DCC",
+  "description": "EU Digital Covid Certificate Value Set Data Types",
+  "$defs": {
+    "disease-agent-targeted": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.1",
+      "type": "string",
+      "valueset-uri": "valuesets/disease-agent-targeted.json"
+    },
+    "vaccine-prophylaxis": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.2",
+      "type": "string",
+      "valueset-uri": "valuesets/vaccine-prophylaxis.json"
+    },
+    "vaccine-medicinal-product": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.3",
+      "type": "string",
+      "valueset-uri": "valuesets/vaccine-medicinal-product.json"
+    },
+    "vaccine-mah-manf": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.4",
+      "type": "string",
+      "valueset-uri": "valuesets/vaccine-mah-manf.json"
+    },
+    "test-manf": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.8",
+      "type": "string",
+      "valueset-uri": "valuesets/test-manf.json"
+    },
+    "test-result": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.9",
+      "type": "string",
+      "valueset-uri": "valuesets/test-result.json"
+    },
+    "test-type": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.7",
+      "type": "string",
+      "valueset-uri": "valuesets/test-type.json"
+    }
+  }
+}
