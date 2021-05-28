@@ -1,5 +1,5 @@
 #!/bin/bash
-curl --silent --show-errors https://covid-19-diagnostics.jrc.ec.europa.eu/devices/hsc-common-recognition-rat |
+curl --silent --show-error https://covid-19-diagnostics.jrc.ec.europa.eu/devices/hsc-common-recognition-rat |
 jq '.extracted_on as $version | .deviceList | reduce .[] as $i
 ({};
 .[$i.id_device] =
