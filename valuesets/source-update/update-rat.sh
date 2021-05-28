@@ -1,4 +1,5 @@
-curl https://covid-19-diagnostics.jrc.ec.europa.eu/devices/hsc-common-recognition-rat |
+#!/bin/bash
+curl --silent --show-errors https://covid-19-diagnostics.jrc.ec.europa.eu/devices/hsc-common-recognition-rat |
 jq '.extracted_on as $version | .deviceList | reduce .[] as $i
 ({};
 .[$i.id_device] =
@@ -7,4 +8,4 @@ jq '.extracted_on as $version | .deviceList | reduce .[] as $i
     "active": true,
     "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
     "version": $i.last_updated
-}) | {"valueSetId": "covid-19-lab-test-manufacturer-and-name", "valueSetDate":$version[0:10], "valueSetValues": .}' > ~/dev/GitHub/ehn-dgc-schema/valuesets/test-manf.json
+}) | {"valueSetId": "covid-19-lab-test-manufacturer-and-name", "valueSetDate":$version[0:10], "valueSetValues": .}'
