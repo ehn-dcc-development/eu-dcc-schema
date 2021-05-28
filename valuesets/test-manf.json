@@ -2,6 +2,20 @@
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetDate": "2021-05-27",
   "valueSetValues": {
+    "1242": {
+      "display": "Bionote, Inc, NowCheck COVID-19 Ag Test",
+      "lang": "en",
+      "active": false,
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "version": "2021-04-22 02:23:55 CET"
+    },
+    "1065": {
+      "display": "Becton Dickinson, Veritor System Rapid Detection of SARS-CoV-2",
+      "lang": "en",
+      "active": false,
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "version": "2021-04-22 02:23:55 CET"
+    },
     "1833": {
       "display": "AAZ-LMB, COVID-VIRO",
       "lang": "en",
