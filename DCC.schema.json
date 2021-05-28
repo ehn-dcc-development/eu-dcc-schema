@@ -1,9 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://id.uvci.eu/DGC.schema.json",
-  "title": "EU DGC",
-  "description": "EU Digital Green Certificate",
-  "$comment": "Schema version 1.1.0",
+  "$id": "https://id.uvci.eu/DCC.schema.json",
+  "title": "EU DCC",
+  "description": "EU Digital Covid Certificate",
+  "$comment": "Schema version 1.2.1",
   "required": [
     "ver",
     "nam",
@@ -17,16 +17,16 @@
       "type": "string",
       "pattern": "^\\d+.\\d+.\\d+$",
       "examples": [
-        "1.1.0"
+        "1.2.1"
       ]
     },
     "nam": {
       "description": "Surname(s), given name(s) - in that order",
-      "$ref": "https://id.uvci.eu/DGC.Core.Types.schema.json#/$defs/person_name"
+      "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/person_name"
     },
     "dob": {
       "title": "Date of birth",
-      "description": "Date of Birth of the person addressed in the DGC. ISO 8601 date format restricted to range 1900-2099",
+      "description": "Date of Birth of the person addressed in the DCC. ISO 8601 date format restricted to range 1900-2099",
       "type": "string",
       "pattern": "^(19|20)\\d\\d(-\\d\\d){0,2}$",
       "examples": [
@@ -39,7 +39,7 @@
       "description": "Vaccination Group",
       "type": "array",
       "items": {
-        "$ref": "https://id.uvci.eu/DGC.Types.schema.json#/$defs/vaccination_entry"
+        "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/vaccination_entry"
       },
       "minItems": 1
     },
@@ -47,7 +47,7 @@
       "description": "Test Group",
       "type": "array",
       "items": {
-        "$ref": "https://id.uvci.eu/DGC.Types.schema.json#/$defs/test_entry"
+        "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/test_entry"
       },
       "minItems": 1
     },
@@ -55,7 +55,7 @@
       "description": "Recovery Group",
       "type": "array",
       "items": {
-        "$ref": "https://id.uvci.eu/DGC.Types.schema.json#/$defs/recovery_entry"
+        "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/recovery_entry"
       },
       "minItems": 1
     }

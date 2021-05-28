@@ -1,11 +1,11 @@
 BASE_URL=	"https://id.uvci.eu"
 
-SCHEMATA=	DGC.schema.json \
-		DGC.Core.Types.schema.json \
-		DGC.Types.schema.json \
-		DGC.ValueSets.schema.json
+SCHEMATA=	DCC.schema.json \
+		DCC.Core.Types.schema.json \
+		DCC.Types.schema.json \
+		DCC.ValueSets.schema.json
 
-MERGED_SCHEMA=	DGC.combined-schema.json
+MERGED_SCHEMA=	DCC.combined-schema.json
 MERGED_ID=	"$(BASE_URL)/$(MERGED_SCHEMA)"
 
 JSON_FILES=	*.json examples/*.json valuesets/*.json
@@ -22,7 +22,7 @@ merge: $(MERGED_SCHEMA)
 
 compile::
 	@echo "Compiling schemata..."
-	$(AJV) compile -r "DGC.*.schema.json" -s "DGC.schema.json"
+	$(AJV) compile -r "DCC.*.schema.json" -s "DCC.schema.json"
 
 check-formatting::
 	@echo "Checking JSON formatting..."
@@ -35,7 +35,7 @@ check-formatting::
 	done
 
 validate-examples::
-	$(AJV) validate -r "DGC.*.schema.json" -s "DGC.schema.json" -d "examples/*.json"
+	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/*.json"
 
 validate-valuesets::
 	$(AJV) validate -s "valueset.json" -d "valuesets/*.json"
