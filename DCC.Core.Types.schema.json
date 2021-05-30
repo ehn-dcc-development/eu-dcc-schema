@@ -7,7 +7,7 @@
     "dose_posint": {
       "description": "Dose Number / Total doses in Series: positive integer, range: [1,9]",
       "type": "integer",
-      "minimum": 1,
+      "minimum": 0,
       "maximum": 9
     },
     "country_vt": {
