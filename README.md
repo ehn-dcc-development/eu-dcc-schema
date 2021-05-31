@@ -1,6 +1,7 @@
 # Digital Covid Certificate Schema
 
 This repository contains a JSON schema for the EU Digital Covid Certificate.
+
 ========
 
 PLEASE NOTE THAT THIS REPOSITORY IS WORK-IN-PROGRESS FOR THE EU EHealthNetwork TechIOP Sub-Group and forms the basis for upcoming JSON Schema versions.
