@@ -9,6 +9,11 @@
     "nam",
     "dob"
   ],
+  "oneOf": [
+    "v",
+    "t",
+    "r"
+  ],
   "type": "object",
   "properties": {
     "ver": {
@@ -41,7 +46,8 @@
       "items": {
         "$ref": "#/$defs/vaccination_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     },
     "t": {
       "description": "Test Group",
@@ -49,7 +55,8 @@
       "items": {
         "$ref": "#/$defs/test_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     },
     "r": {
       "description": "Recovery Group",
@@ -57,7 +64,8 @@
       "items": {
         "$ref": "#/$defs/recovery_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     }
   },
   "$defs": {
