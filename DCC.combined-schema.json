@@ -163,11 +163,11 @@
         },
         "dn": {
           "description": "Dose Number",
-          "$ref": "#/$defs/dose_posint"
+          "$ref": "#/$defs/dose_non_neg"
         },
         "sd": {
           "description": "Total Series of Doses",
-          "$ref": "#/$defs/dose_posint"
+          "$ref": "#/$defs/dose_non_neg"
         },
         "dt": {
           "description": "Date of Vaccination",
