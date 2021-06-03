@@ -61,8 +61,8 @@
     }
   },
   "$defs": {
-    "dose_posint": {
-      "description": "Dose Number / Total doses in Series: positive integer, range: [0,9]",
+    "dose_non_neg": {
+      "description": "Dose Number / Total doses in Series: non-negative integer, range: [0,9]",
       "type": "integer",
       "minimum": 0,
       "maximum": 9

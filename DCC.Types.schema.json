@@ -38,11 +38,11 @@
         },
         "dn": {
           "description": "Dose Number",
-          "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/dose_posint"
+          "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/dose_non_neg"
         },
         "sd": {
           "description": "Total Series of Doses",
-          "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/dose_posint"
+          "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/dose_non_neg"
         },
         "dt": {
           "description": "Date of Vaccination",
