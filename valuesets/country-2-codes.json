@@ -1,6 +1,6 @@
 {
   "valueSetId": "country-2-codes",
-  "valueSetDate": "2019-11-01T09:29:23.356+11:00",
+  "valueSetDate": "2019-11-01",
   "valueSetValues": {
     "AD": {
       "display": "Andorra",
