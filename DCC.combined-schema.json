@@ -70,7 +70,8 @@
     "country_vt": {
       "description": "Country of Vaccination / Test, ISO 3166 where possible",
       "type": "string",
-      "pattern": "[A-Z]{1,10}"
+      "pattern": "[A-Z]{1,10}",
+      "valueset-uri": "valuesets/country-2-codes.json"
     },
     "issuer": {
       "description": "Certificate Issuer",

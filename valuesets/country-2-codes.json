@@ -1,0 +1,1749 @@
+{
+  "valueSetId": "country-2-codes",
+  "valueSetDate": "2021-06-03",
+  "valueSetValues": {
+    "AD": {
+      "display": "Andorra",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AE": {
+      "display": "United Arab Emirates",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AF": {
+      "display": "Afghanistan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AG": {
+      "display": "Antigua and Barbuda",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AI": {
+      "display": "Anguilla",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AL": {
+      "display": "Albania",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AM": {
+      "display": "Armenia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AO": {
+      "display": "Angola",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AQ": {
+      "display": "Antarctica",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AR": {
+      "display": "Argentina",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AS": {
+      "display": "American Samoa",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AT": {
+      "display": "Austria",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AU": {
+      "display": "Australia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AW": {
+      "display": "Aruba",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AX": {
+      "display": "Åland Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "AZ": {
+      "display": "Azerbaijan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BA": {
+      "display": "Bosnia and Herzegovina",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BB": {
+      "display": "Barbados",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BD": {
+      "display": "Bangladesh",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BE": {
+      "display": "Belgium",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BF": {
+      "display": "Burkina Faso",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BG": {
+      "display": "Bulgaria",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BH": {
+      "display": "Bahrain",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BI": {
+      "display": "Burundi",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BJ": {
+      "display": "Benin",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BL": {
+      "display": "Saint Barthélemy",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BM": {
+      "display": "Bermuda",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BN": {
+      "display": "Brunei Darussalam",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BO": {
+      "display": "Bolivia, Plurinational State of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BQ": {
+      "display": "Bonaire, Sint Eustatius and Saba",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BR": {
+      "display": "Brazil",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BS": {
+      "display": "Bahamas",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BT": {
+      "display": "Bhutan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BV": {
+      "display": "Bouvet Island",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BW": {
+      "display": "Botswana",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BY": {
+      "display": "Belarus",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "BZ": {
+      "display": "Belize",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CA": {
+      "display": "Canada",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CC": {
+      "display": "Cocos (Keeling) Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CD": {
+      "display": "Congo, the Democratic Republic of the",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CF": {
+      "display": "Central African Republic",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CG": {
+      "display": "Congo",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CH": {
+      "display": "Switzerland",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CI": {
+      "display": "Côte d''Ivoire",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CK": {
+      "display": "Cook Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CL": {
+      "display": "Chile",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CM": {
+      "display": "Cameroon",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CN": {
+      "display": "China",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CO": {
+      "display": "Colombia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CR": {
+      "display": "Costa Rica",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CU": {
+      "display": "Cuba",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CV": {
+      "display": "Cabo Verde",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CW": {
+      "display": "Curaçao",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CX": {
+      "display": "Christmas Island",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CY": {
+      "display": "Cyprus",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "CZ": {
+      "display": "Czechia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "DE": {
+      "display": "Germany",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "DJ": {
+      "display": "Djibouti",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "DK": {
+      "display": "Denmark",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "DM": {
+      "display": "Dominica",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "DO": {
+      "display": "Dominican Republic",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "DZ": {
+      "display": "Algeria",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "EC": {
+      "display": "Ecuador",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "EE": {
+      "display": "Estonia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "EG": {
+      "display": "Egypt",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "EH": {
+      "display": "Western Sahara",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ER": {
+      "display": "Eritrea",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ES": {
+      "display": "Spain",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ET": {
+      "display": "Ethiopia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "FI": {
+      "display": "Finland",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "FJ": {
+      "display": "Fiji",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "FK": {
+      "display": "Falkland Islands (Malvinas)",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "FM": {
+      "display": "Micronesia, Federated States of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "FO": {
+      "display": "Faroe Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "FR": {
+      "display": "France",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GA": {
+      "display": "Gabon",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GB": {
+      "display": "United Kingdom of Great Britain and Northern Ireland",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GD": {
+      "display": "Grenada",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GE": {
+      "display": "Georgia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GF": {
+      "display": "French Guiana",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GG": {
+      "display": "Guernsey",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GH": {
+      "display": "Ghana",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GI": {
+      "display": "Gibraltar",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GL": {
+      "display": "Greenland",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GM": {
+      "display": "Gambia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GN": {
+      "display": "Guinea",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GP": {
+      "display": "Guadeloupe",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GQ": {
+      "display": "Equatorial Guinea",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GR": {
+      "display": "Greece",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GS": {
+      "display": "South Georgia and the South Sandwich Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GT": {
+      "display": "Guatemala",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GU": {
+      "display": "Guam",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GW": {
+      "display": "Guinea-Bissau",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "GY": {
+      "display": "Guyana",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "HK": {
+      "display": "Hong Kong",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "HM": {
+      "display": "Heard Island and McDonald Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "HN": {
+      "display": "Honduras",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "HR": {
+      "display": "Croatia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "HT": {
+      "display": "Haiti",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "HU": {
+      "display": "Hungary",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ID": {
+      "display": "Indonesia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IE": {
+      "display": "Ireland",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IL": {
+      "display": "Israel",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IM": {
+      "display": "Isle of Man",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IN": {
+      "display": "India",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IO": {
+      "display": "British Indian Ocean Territory",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IQ": {
+      "display": "Iraq",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IR": {
+      "display": "Iran, Islamic Republic of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IS": {
+      "display": "Iceland",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "IT": {
+      "display": "Italy",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "JE": {
+      "display": "Jersey",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "JM": {
+      "display": "Jamaica",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "JO": {
+      "display": "Jordan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "JP": {
+      "display": "Japan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KE": {
+      "display": "Kenya",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KG": {
+      "display": "Kyrgyzstan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KH": {
+      "display": "Cambodia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KI": {
+      "display": "Kiribati",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KM": {
+      "display": "Comoros",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KN": {
+      "display": "Saint Kitts and Nevis",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KP": {
+      "display": "Korea, Democratic People''s Republic of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KR": {
+      "display": "Korea, Republic of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KW": {
+      "display": "Kuwait",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KY": {
+      "display": "Cayman Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "KZ": {
+      "display": "Kazakhstan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LA": {
+      "display": "Lao People''s Democratic Republic",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LB": {
+      "display": "Lebanon",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LC": {
+      "display": "Saint Lucia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LI": {
+      "display": "Liechtenstein",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LK": {
+      "display": "Sri Lanka",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LR": {
+      "display": "Liberia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LS": {
+      "display": "Lesotho",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LT": {
+      "display": "Lithuania",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LU": {
+      "display": "Luxembourg",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LV": {
+      "display": "Latvia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "LY": {
+      "display": "Libya",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MA": {
+      "display": "Morocco",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MC": {
+      "display": "Monaco",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MD": {
+      "display": "Moldova, Republic of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ME": {
+      "display": "Montenegro",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MF": {
+      "display": "Saint Martin (French part)",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MG": {
+      "display": "Madagascar",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MH": {
+      "display": "Marshall Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MK": {
+      "display": "Macedonia, the former Yugoslav Republic of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ML": {
+      "display": "Mali",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MM": {
+      "display": "Myanmar",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MN": {
+      "display": "Mongolia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MO": {
+      "display": "Macao",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MP": {
+      "display": "Northern Mariana Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MQ": {
+      "display": "Martinique",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MR": {
+      "display": "Mauritania",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MS": {
+      "display": "Montserrat",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MT": {
+      "display": "Malta",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MU": {
+      "display": "Mauritius",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MV": {
+      "display": "Maldives",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MW": {
+      "display": "Malawi",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MX": {
+      "display": "Mexico",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MY": {
+      "display": "Malaysia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "MZ": {
+      "display": "Mozambique",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NA": {
+      "display": "Namibia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NC": {
+      "display": "New Caledonia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NE": {
+      "display": "Niger",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NF": {
+      "display": "Norfolk Island",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NG": {
+      "display": "Nigeria",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NI": {
+      "display": "Nicaragua",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NL": {
+      "display": "Netherlands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NO": {
+      "display": "Norway",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NP": {
+      "display": "Nepal",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NR": {
+      "display": "Nauru",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NU": {
+      "display": "Niue",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "NZ": {
+      "display": "New Zealand",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "OM": {
+      "display": "Oman",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PA": {
+      "display": "Panama",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PE": {
+      "display": "Peru",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PF": {
+      "display": "French Polynesia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PG": {
+      "display": "Papua New Guinea",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PH": {
+      "display": "Philippines",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PK": {
+      "display": "Pakistan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PL": {
+      "display": "Poland",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PM": {
+      "display": "Saint Pierre and Miquelon",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PN": {
+      "display": "Pitcairn",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PR": {
+      "display": "Puerto Rico",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PS": {
+      "display": "Palestine, State of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PT": {
+      "display": "Portugal",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PW": {
+      "display": "Palau",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "PY": {
+      "display": "Paraguay",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "QA": {
+      "display": "Qatar",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "RE": {
+      "display": "Réunion",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "RO": {
+      "display": "Romania",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "RS": {
+      "display": "Serbia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "RU": {
+      "display": "Russian Federation",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "RW": {
+      "display": "Rwanda",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SA": {
+      "display": "Saudi Arabia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SB": {
+      "display": "Solomon Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SC": {
+      "display": "Seychelles",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SD": {
+      "display": "Sudan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SE": {
+      "display": "Sweden",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SG": {
+      "display": "Singapore",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SH": {
+      "display": "Saint Helena, Ascension and Tristan da Cunha",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SI": {
+      "display": "Slovenia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SJ": {
+      "display": "Svalbard and Jan Mayen",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SK": {
+      "display": "Slovakia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SL": {
+      "display": "Sierra Leone",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SM": {
+      "display": "San Marino",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SN": {
+      "display": "Senegal",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SO": {
+      "display": "Somalia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SR": {
+      "display": "Suriname",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SS": {
+      "display": "South Sudan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ST": {
+      "display": "Sao Tome and Principe",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SV": {
+      "display": "El Salvador",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SX": {
+      "display": "Sint Maarten (Dutch part)",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SY": {
+      "display": "Syrian Arab Republic",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "SZ": {
+      "display": "Swaziland",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TC": {
+      "display": "Turks and Caicos Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TD": {
+      "display": "Chad",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TF": {
+      "display": "French Southern Territories",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TG": {
+      "display": "Togo",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TH": {
+      "display": "Thailand",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TJ": {
+      "display": "Tajikistan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TK": {
+      "display": "Tokelau",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TL": {
+      "display": "Timor-Leste",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TM": {
+      "display": "Turkmenistan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TN": {
+      "display": "Tunisia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TO": {
+      "display": "Tonga",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TR": {
+      "display": "Turkey",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TT": {
+      "display": "Trinidad and Tobago",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TV": {
+      "display": "Tuvalu",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TW": {
+      "display": "Taiwan, Province of China",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "TZ": {
+      "display": "Tanzania, United Republic of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "UA": {
+      "display": "Ukraine",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "UG": {
+      "display": "Uganda",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "UM": {
+      "display": "United States Minor Outlying Islands",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "US": {
+      "display": "United States of America",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "UY": {
+      "display": "Uruguay",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "UZ": {
+      "display": "Uzbekistan",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "VA": {
+      "display": "Holy See",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "VC": {
+      "display": "Saint Vincent and the Grenadines",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "VE": {
+      "display": "Venezuela, Bolivarian Republic of",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "VG": {
+      "display": "Virgin Islands, British",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "VI": {
+      "display": "Virgin Islands,",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "VN": {
+      "display": "Viet Nam",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "VU": {
+      "display": "Vanuatu",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "WF": {
+      "display": "Wallis and Futuna",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "WS": {
+      "display": "Samoa",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "YE": {
+      "display": "Yemen",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "YT": {
+      "display": "Mayotte",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ZA": {
+      "display": "South Africa",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ZM": {
+      "display": "Zambia",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    },
+    "ZW": {
+      "display": "Zimbabwe",
+      "lang": "en",
+      "active": true,
+      "system": "urn:iso:std:iso:3166",
+      "valueSetId": "iso3166-1-2"
+    }
+  }
+}
