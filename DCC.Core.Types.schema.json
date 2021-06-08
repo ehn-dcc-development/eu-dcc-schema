@@ -5,21 +5,14 @@
   "description": "EU Digital Covid Certificate Core Data Types",
   "$defs": {
     "dose_posint": {
-      "description": "Dose Number / Total doses in Series: positive integer, range: [1,9]",
+      "description": "Dose Number / Total doses in Series: positive integer",
       "type": "integer",
-      "minimum": 1,
-      "maximum": 9
-    },
-    "country_vt": {
-      "description": "Country of Vaccination / Test, ISO 3166 where possible",
-      "type": "string",
-      "pattern": "[A-Z]{1,10}",
-      "valueset-uri": "valuesets/country-2-codes.json"
+      "minimum": 1
     },
     "issuer": {
       "description": "Certificate Issuer",
       "type": "string",
-      "maxLength": 50
+      "maxLength": 80
     },
     "person_name": {
       "description": "Person name: Surname(s), given name(s) - in that order",
@@ -29,39 +22,39 @@
       "type": "object",
       "properties": {
         "fn": {
-          "title": "Family name",
-          "description": "The family or primary name(s) of the person addressed in the certificate",
+          "title": "Surname",
+          "description": "The surname or primary name(s) of the person addressed in the certificate",
           "type": "string",
-          "maxLength": 50,
+          "maxLength": 80,
           "examples": [
             "d'Červenková Panklová"
           ]
         },
         "fnt": {
-          "title": "Standardised family name",
-          "description": "The family name(s) of the person transliterated",
+          "title": "Standardised surname",
+          "description": "The surname(s) of the person, transliterated ICAO 9303",
           "type": "string",
           "pattern": "^[A-Z<]*$",
-          "maxLength": 50,
+          "maxLength": 80,
           "examples": [
             "DCERVENKOVA<PANKLOVA"
           ]
         },
         "gn": {
-          "title": "Given name",
-          "description": "The given name(s) of the person addressed in the certificate",
+          "title": "Forename",
+          "description": "The forename(s) of the person addressed in the certificate",
           "type": "string",
-          "maxLength": 50,
+          "maxLength": 80,
           "examples": [
             "Jiřina-Maria Alena"
           ]
         },
         "gnt": {
-          "title": "Standardised given name",
-          "description": "The given name(s) of the person transliterated",
+          "title": "Standardised forename",
+          "description": "The forename(s) of the person, transliterated ICAO 9303",
           "type": "string",
           "pattern": "^[A-Z<]*$",
-          "maxLength": 50,
+          "maxLength": 80,
           "examples": [
             "JIRINA<MARIA<ALENA"
           ]
@@ -71,7 +64,7 @@
     "certificate_id": {
       "description": "Certificate Identifier, format as per UVCI: Annex 2 in  https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf",
       "type": "string",
-      "maxLength": 50
+      "maxLength": 80
     }
   }
 }

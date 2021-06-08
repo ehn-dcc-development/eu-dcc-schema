@@ -3,13 +3,34 @@
   "$id": "https://id.uvci.eu/DCC.schema.json",
   "title": "EU DCC",
   "description": "EU Digital Covid Certificate",
-  "$comment": "Schema version 1.2.1",
-  "required": [
-    "ver",
-    "nam",
-    "dob"
-  ],
+  "$comment": "Schema version 1.3.0",
   "type": "object",
+  "oneOf": [
+    {
+      "required": [
+        "ver",
+        "nam",
+        "dob",
+        "v"
+      ]
+    },
+    {
+      "required": [
+        "ver",
+        "nam",
+        "dob",
+        "t"
+      ]
+    },
+    {
+      "required": [
+        "ver",
+        "nam",
+        "dob",
+        "r"
+      ]
+    }
+  ],
   "properties": {
     "ver": {
       "title": "Schema version",
@@ -17,7 +38,7 @@
       "type": "string",
       "pattern": "^\\d+.\\d+.\\d+$",
       "examples": [
-        "1.2.1"
+        "1.3.0"
       ]
     },
     "nam": {
@@ -41,7 +62,8 @@
       "items": {
         "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/vaccination_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     },
     "t": {
       "description": "Test Group",
@@ -49,7 +71,8 @@
       "items": {
         "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/test_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     },
     "r": {
       "description": "Recovery Group",
@@ -57,7 +80,8 @@
       "items": {
         "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/recovery_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     }
   }
 }

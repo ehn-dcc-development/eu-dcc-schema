@@ -7,18 +7,17 @@
     "gnt": "CHARLES<EDWARD"
   },
   "dob": "1964",
-  "v": [
+  "t": [
     {
       "tg": "840539006",
-      "vp": "1119349007",
-      "mp": "EU/1/20/1528",
-      "ma": "ORG-100030215",
-      "dn": 0,
-      "sd": 2,
-      "dt": "2021-06-11",
+      "tt": "LP217198-3",
+      "ma": "532",
+      "sc": "2021-06-11T17:30:00Z",
+      "tr": "260415000",
+      "tc": "Example Test Corp, Big City",
       "co": "NL",
       "is": "Ministry of Health Welfare and Sport",
-      "ci": "urn:uvci:01:NL:PlA8UWS60Z4RZXVALl6GAZ"
+      "ci": "urn:uvci:01:NL:dadfcc47c7334e45a906db12fd859fb2"
     }
   ]
 }

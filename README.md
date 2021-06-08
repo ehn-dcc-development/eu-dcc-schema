@@ -2,20 +2,8 @@
 
 This repository contains a JSON schema for the EU Digital Covid Certificate.
 
-========
-
-PLEASE NOTE THAT THIS REPOSITORY IS WORK-IN-PROGRESS FOR THE EU EHealthNetwork TechIOP Sub-Group and forms the basis for upcoming JSON Schema versions.
-
-At some point a given version from this repository will be promoted to:
-
-https://github.com/eu-digital-green-certificates/ehn-dgc-schema
-
-which is where the versions for production apps for the DCCG are maintained.
-
-========
-
-**Schema version:** 1.2.1
-**Release date:** 2020-05-27
+**Schema version:** 1.3.0
+**Release date:** 2020-06-09
 
 
 ## Introduction
@@ -45,26 +33,6 @@ For easy testing, they are combined in:
 
 But the above 4 files are always leading.
 
-The files:
-
-- examples/*.json
-
-are examples created in vitro & very artificial.
-
-
 ## Implementation Notes
 
 A list of [Frequently Asked Questions](https://github.com/ehn-digital-green-development/ehn-dgc-schema/wiki/FAQ) for implementors can be found in the [repository wiki](https://github.com/ehn-digital-green-development/ehn-dgc-schema/wiki).
-
-### CBOR Encoding
-
-Concise Binary Object Representation (CBOR), specified in [RFC7049](https://tools.ietf.org/html/rfc7049), defines a number of major data types. The following types are REQUIRED to be used by parties creating electronic health certificates payloads:
-
-- Integers are encoded as CBOR major type 0, an unsigned integer.
-- Strings are encoded as CBOR major type 3, a text string.
-- Arrays are encoded as CBOR major type 4, an array of data items.
-- Objects are encoded as CBOR major type 5, a map of pairs of data items.
-
-Timestamps (defined by JSON type `string` and format `date-time`) MUST be encoded as CBOR major type 3, a text string, formatted per [RFC 3339, section 5.6](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6), and SHOULD be tagged 0 as specified by [RFC 8949, section 3.4.1](https://datatracker.ietf.org/doc/html/rfc8949#section-3.4.1).
-
-Validators MUST be able to read both tagged and untagged data.

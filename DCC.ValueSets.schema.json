@@ -24,6 +24,12 @@
       "type": "string",
       "valueset-uri": "valuesets/vaccine-mah-manf.json"
     },
+    "country_vt": {
+      "description": "Country of Vaccination / Test, ISO 3166 alpha-2 where possible",
+      "type": "string",
+      "pattern": "[A-Z]{1,10}",
+      "valueset-uri": "valuesets/country-2-codes.json"
+    },
     "test-manf": {
       "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. version 1.0, 2021-04-16, section 2.8",
       "type": "string",
