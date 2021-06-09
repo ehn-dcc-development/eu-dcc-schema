@@ -35,4 +35,4 @@ But the above 4 files are always leading.
 
 ## Implementation Notes
 
-A list of [Frequently Asked Questions](https://github.com/ehn-digital-green-development/ehn-dgc-schema/wiki/FAQ) for implementors can be found in the [repository wiki](https://github.com/ehn-digital-green-development/ehn-dgc-schema/wiki).
+A list of [Frequently Asked Questions](https://github.com/ehn-dcc-development/ehn-dcc-schema/wiki/FAQ) for implementors can be found in the [repository wiki](https://github.com/ehn-dcc-development/ehn-dcc-schema/wiki).
