@@ -42,7 +42,7 @@
       ]
     },
     "nam": {
-      "description": "Surname(s), given name(s) - in that order",
+      "description": "Surname(s), forename(s) - in that order",
       "$ref": "#/$defs/person_name"
     },
     "dob": {
