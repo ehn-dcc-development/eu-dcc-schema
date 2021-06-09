@@ -45,10 +45,9 @@
           "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/dose_posint"
         },
         "dt": {
-          "description": "Date of Vaccination",
+          "description": "ISO8601 complete date: Date of Vaccination",
           "type": "string",
           "format": "date",
-          "$comment": "ISO8601 full-date only"
         },
         "co": {
           "description": "Country of Vaccination",
