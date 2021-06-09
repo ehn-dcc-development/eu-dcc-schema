@@ -47,7 +47,7 @@
         "dt": {
           "description": "ISO8601 complete date: Date of Vaccination",
           "type": "string",
-          "format": "date",
+          "format": "date"
         },
         "co": {
           "description": "Country of Vaccination",
