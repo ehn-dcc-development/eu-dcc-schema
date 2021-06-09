@@ -31,8 +31,8 @@ For easy testing, they are combined in:
 
 - [DCC.combined-schema.json](./DCC.combined-schema.json)
 
-The rule in the [Makefile](./Makefile) for this target performs the combining operation.
-The [`merge.sh` script](./merge.sh) also performs this operation, but without reformatting and validating the resulting JSON.
+The rule labeled as `$(MERGED_SCHEMA)` in the [Makefile](./Makefile) makes this target by combining the 4 schema files (“schemata”) mentioned above into one schema file, and also reformatting and validating it.
+The [`merge.sh` script](./merge.sh) does the same, but without reformatting and validating the resulting JSON.
 This can be useful for development purposes, but make sure to also run `make` prior to committing.
 
 _Note:_ the first 4, non-combined schema files are always leading.
@@ -60,8 +60,8 @@ A list of [Frequently Asked Questions](https://github.com/ehn-dcc-development/eh
 The Makefile assumes the following tools to be installed:
 
 * [Python (version 3)](https://www.python.org/downloads/)
-* [GNU Make](https://www.gnu.org/software/make/) to execute the [Makefile](./Makefile).
-* [Node.js](https://nodejs.org/en/download/) which comes with the [NPM package manager](https://www.npmjs.com/) which is used to install a couple of dependencies.
+* A(ny) Make (such as [GNU Make](https://www.gnu.org/software/make/)) to execute the [Makefile](./Makefile).
+* [Node.js](https://nodejs.org/en/download/): installing Node.js also installs the [NPM package manager](https://www.npmjs.com/) which is used to install a couple of dependencies.
 * [jq](https://stedolan.github.io/jq/)
 
 The Makefile also relies on the [`ajv` JSON Schema validator](https://ajv.js.org/), which is installed by the `install-ajv` rule in the Makefile:
