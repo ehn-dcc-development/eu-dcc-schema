@@ -99,6 +99,20 @@
       "active": true,
       "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
       "version": "1.0"
+    },
+    "CIGB": {
+      "display": "Centro de Ingeniería Genética y Biotecnología",
+      "lang": "en",
+      "active": true,
+      "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+      "version": "1.0"
+    },
+    "IFV": {
+      "display": "Instituto Finlay de Vacunas",
+      "lang": "en",
+      "active": true,
+      "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+      "version": "1.0"
     }
   }
 }

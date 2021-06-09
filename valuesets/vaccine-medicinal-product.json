@@ -85,6 +85,20 @@
       "active": true,
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
+    },
+    "Soberana-02": {
+      "display": "Soberana 02 FINLAY- FR-2 anti SARS-CoV-2 (COVID-19)",
+      "lang": "en",
+      "active": true,
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "Abdala": {
+      "display": "Abdala (CIGB-66)",
+      "lang": "en",
+      "active": true,
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
     }
   }
 }
