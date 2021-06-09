@@ -15,7 +15,7 @@
       "maxLength": 80
     },
     "person_name": {
-      "description": "Person name: Surname(s), given name(s) - in that order",
+      "description": "Person name: Surname(s), forename(s) - in that order",
       "required": [
         "fnt"
       ],
