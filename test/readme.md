@@ -17,7 +17,6 @@ invalid_dob			| Data-of-birth is out of range (after)
 invalid_vac			| Vaccination with an invalid dose number
 missing_dob			| Element 'dob' is missing
 missing_fnt			| Element 'fnt' is missing
-invalid_ci_casing	| Certificate identifer `ci` is in lower case
 
 
 # Valid cases 
