@@ -68,3 +68,19 @@ The Makefile also relies on the [`ajv` JSON Schema validator](https://ajv.js.org
 
     $ make install-ajv
 
+
+## Examples and test cases
+
+The examples and the test cases can be validated with `ajv` by using the following commands.
+
+To validate all of the examples:
+
+	make validate-examples
+	
+..and all of expected valid tests:
+
+	make validate-valid-tests
+
+..and all of the expected invalid tests:
+
+	make validate-invalid-tests

@@ -13,6 +13,7 @@ JSON_FILES=	*.json \
 		examples/test/*.json \
 		examples/recovery/*.json \
 		test/invalid/*.json \
+		test/valid/*.json \
 		valuesets/*.json
 
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020 --strict=false
@@ -44,6 +45,12 @@ validate-examples::
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/vaccination/*.json"
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/recovery/*.json"
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/test/*.json"
+
+validate-valid-tests::
+	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/valid/*.json"
+	
+validate-invalid-tests::
+	$(AJV) test -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/invalid/*.json" --invalid
 
 validate-valuesets::
 	$(AJV) validate -s "valueset.json" -d "valuesets/*.json"
