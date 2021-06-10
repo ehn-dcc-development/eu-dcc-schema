@@ -1,0 +1,23 @@
+{
+  "ver": "1.3.0",
+  "nam": {
+    "fn": "Smith-Jones",
+    "fnt": "SMITH<JONES",
+    "gn": "Charles Edward",
+    "gnt": "CHARLES<EDWARD"
+  },
+  "dob": "1964-01-01",
+  "t": [
+    {
+      "tg": "840539006",
+      "tt": "LP217198-3",
+      "ma": "532",
+      "sc": "2021-06-11T17:30:00+02:00",
+      "tr": "260415000",
+      "tc": "Example Test Corp, Big City",
+      "co": "NL",
+      "is": "Ministry of Health Welfare and Sport",
+      "ci": "URN:UVCI:01:NL:DADFCC47C7334E45A906DB12FD859FB2"
+    }
+  ]
+}
