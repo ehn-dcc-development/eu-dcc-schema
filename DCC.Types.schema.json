@@ -45,14 +45,13 @@
           "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/dose_posint"
         },
         "dt": {
-          "description": "Date of Vaccination",
+          "description": "ISO8601 complete date: Date of Vaccination",
           "type": "string",
-          "format": "date",
-          "$comment": "SemanticSG: constrain to specific date range?"
+          "format": "date"
         },
         "co": {
           "description": "Country of Vaccination",
-          "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/country_vt"
+          "$ref": "https://id.uvci.eu/DCC.ValueSets.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
@@ -71,7 +70,6 @@
         "tt",
         "sc",
         "tr",
-        "tc",
         "co",
         "is",
         "ci"
@@ -87,7 +85,8 @@
         },
         "nm": {
           "description": "NAA Test Name",
-          "type": "string"
+          "type": "string",
+          "maxLength": 80
         },
         "ma": {
           "description": "RAT Test name and manufacturer",
@@ -105,11 +104,11 @@
         "tc": {
           "description": "Testing Centre",
           "type": "string",
-          "maxLength": 50
+          "maxLength": 80
         },
         "co": {
           "description": "Country of Test",
-          "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/country_vt"
+          "$ref": "https://id.uvci.eu/DCC.ValueSets.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
@@ -138,25 +137,25 @@
           "$ref": "https://id.uvci.eu/DCC.ValueSets.schema.json#/$defs/disease-agent-targeted"
         },
         "fr": {
-          "description": "ISO 8601 Date of First Positive NAA Test Result",
+          "description": "ISO 8601 complete date of first positive NAA test result",
           "type": "string",
           "format": "date"
         },
         "co": {
           "description": "Country of Test",
-          "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/country_vt"
+          "$ref": "https://id.uvci.eu/DCC.ValueSets.schema.json#/$defs/country_vt"
         },
         "is": {
           "description": "Certificate Issuer",
           "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/issuer"
         },
         "df": {
-          "description": "ISO 8601 Date: Certificate Valid From",
+          "description": "ISO 8601 complete date: Certificate Valid From",
           "type": "string",
           "format": "date"
         },
         "du": {
-          "description": "Certificate Valid Until",
+          "description": "ISO 8601 complete date: Certificate Valid Until",
           "type": "string",
           "format": "date"
         },

@@ -8,17 +8,24 @@ SCHEMATA=	DCC.schema.json \
 MERGED_SCHEMA=	DCC.combined-schema.json
 MERGED_ID=	"$(BASE_URL)/$(MERGED_SCHEMA)"
 
-JSON_FILES=	*.json examples/*.json valuesets/*.json
+JSON_FILES=	*.json \
+		examples/vaccination/*.json \
+		examples/test/*.json \
+		examples/recovery/*.json \
+		test/invalid/*.json \
+		test/valid/*.json \
+		valuesets/*.json
 
-AJV_=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020 --strict=false
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020 --strict=false
 
 
 test:: compile validate-valuesets validate-examples check-formatting $(MERGED_SCHEMA)
-	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/*.json" --valid
+	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/vaccination/*.json" --valid
+	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/recovery/*.json" --valid
+	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/test/*.json" --valid
 	$(AJV) test -s $(MERGED_SCHEMA) -d "test/invalid/*.json" --invalid
 
-merge: $(MERGED_SCHEMA)
+combined: $(MERGED_SCHEMA)
 
 compile::
 	@echo "Compiling schemata..."
@@ -35,7 +42,15 @@ check-formatting::
 	done
 
 validate-examples::
-	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/*.json"
+	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/vaccination/*.json"
+	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/recovery/*.json"
+	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/test/*.json"
+
+validate-valid-tests::
+	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/valid/*.json"
+	
+validate-invalid-tests::
+	$(AJV) test -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/invalid/*.json" --invalid
 
 validate-valuesets::
 	$(AJV) validate -s "valueset.json" -d "valuesets/*.json"
@@ -45,7 +60,7 @@ $(MERGED_SCHEMA): $(SCHEMATA)
 	$(AJV) compile -s $@
 
 reformat::
-	for file in $(JSON_FILES); do jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
+	for file in $(JSON_FILES); do echo $$file; jq . <$$file >$$file.tmp && mv $$file.tmp $$file; done
 
 install-ajv:
 	npm install ajv ajv-cli ajv-formats

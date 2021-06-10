@@ -3,13 +3,34 @@
   "$id": "https://id.uvci.eu/DCC.schema.json",
   "title": "EU DCC",
   "description": "EU Digital Covid Certificate",
-  "$comment": "Schema version 1.2.1",
-  "required": [
-    "ver",
-    "nam",
-    "dob"
-  ],
+  "$comment": "Schema version 1.3.0",
   "type": "object",
+  "oneOf": [
+    {
+      "required": [
+        "ver",
+        "nam",
+        "dob",
+        "v"
+      ]
+    },
+    {
+      "required": [
+        "ver",
+        "nam",
+        "dob",
+        "t"
+      ]
+    },
+    {
+      "required": [
+        "ver",
+        "nam",
+        "dob",
+        "r"
+      ]
+    }
+  ],
   "properties": {
     "ver": {
       "title": "Schema version",
@@ -17,22 +38,23 @@
       "type": "string",
       "pattern": "^\\d+.\\d+.\\d+$",
       "examples": [
-        "1.2.1"
+        "1.3.0"
       ]
     },
     "nam": {
-      "description": "Surname(s), given name(s) - in that order",
+      "description": "Surname(s), forename(s) - in that order",
       "$ref": "https://id.uvci.eu/DCC.Core.Types.schema.json#/$defs/person_name"
     },
     "dob": {
       "title": "Date of birth",
-      "description": "Date of Birth of the person addressed in the DCC. ISO 8601 date format restricted to range 1900-2099",
+      "description": "Date of Birth of the person addressed in the DCC. ISO 8601 date format restricted to range 1900-2099 or empty",
       "type": "string",
-      "pattern": "^(19|20)\\d\\d(-\\d\\d){0,2}$",
+      "pattern": "^((19|20)\\d\\d(-\\d\\d){0,2}){0,1}$",
       "examples": [
         "1979-04-14",
         "1950",
-        "1901-08"
+        "1901-08",
+        ""
       ]
     },
     "v": {
@@ -41,7 +63,8 @@
       "items": {
         "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/vaccination_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     },
     "t": {
       "description": "Test Group",
@@ -49,7 +72,8 @@
       "items": {
         "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/test_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     },
     "r": {
       "description": "Recovery Group",
@@ -57,7 +81,8 @@
       "items": {
         "$ref": "https://id.uvci.eu/DCC.Types.schema.json#/$defs/recovery_entry"
       },
-      "minItems": 1
+      "minItems": 1,
+      "maxItems": 1
     }
   }
 }
