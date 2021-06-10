@@ -50,7 +50,7 @@ validate-valid-tests::
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/valid/*.json"
 	
 validate-invalid-tests::
-	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/invalid/*.json"
+	$(AJV) test -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/invalid/*.json" --invalid
 
 validate-valuesets::
 	$(AJV) validate -s "valueset.json" -d "valuesets/*.json"
