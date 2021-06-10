@@ -3,7 +3,7 @@
 This repository contains a JSON schema for the EU Digital Covid Certificate.
 
 **Schema version:** 1.3.0
-**Release date:** 2020-06-09
+**Release date:** 2020-06-11
 
 
 ## Introduction
