@@ -5,6 +5,7 @@
   "description": "EU Digital Covid Certificate",
   "$comment": "Schema version 1.3.0",
   "type": "object",
+  "additionalProperties": false,
   "oneOf": [
     {
       "required": [
