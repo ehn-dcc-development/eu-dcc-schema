@@ -505,6 +505,13 @@
       "active": true,
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "version": "2021-05-10 13:18:20 CET"
-    }
+    },
+    "1501": { 
+      "display": "New Gene (Hangzhou) Bioengineering Co., Ltd, COVID-19 Antigen Detection Kit", 
+      "lang": "en", 
+      "active": true, 
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices", 
+      "version": "2021-07-15 17:46:14 CET" 
+     }
   }
 }
