@@ -223,6 +223,7 @@
       "type": "object",
       "properties": {
         "tg": {
+          "description": "disease or agent targeted",
           "$ref": "#/$defs/disease-agent-targeted"
         },
         "tt": {
@@ -280,6 +281,7 @@
       "type": "object",
       "properties": {
         "tg": {
+          "description": "disease or agent targeted",
           "$ref": "#/$defs/disease-agent-targeted"
         },
         "fr": {
