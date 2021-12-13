@@ -29,6 +29,14 @@
         "dob",
         "r"
       ]
+    },
+    {
+      "required": [
+        "ver",
+        "nam",
+        "dob",
+        "a"
+      ]
     }
   ],
   "properties": {
@@ -82,6 +90,15 @@
       "type": "array",
       "items": {
         "$ref": "#/$defs/recovery_entry"
+      },
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "a": {
+      "description": "Approval Group",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/approval_entry"
       },
       "minItems": 1,
       "maxItems": 1
@@ -309,6 +326,50 @@
         },
         "ci": {
           "description": "Unique Certificate Identifier, UVCI",
+          "$ref": "#/$defs/certificate_id"
+        }
+      }
+    },
+    "approval_entry": {
+      "description": "Approved for Travel Entry",
+      "required": [
+        "tg",
+        "dt",
+        "ap",
+        "co",
+        "is",
+        "ci"
+      ],
+      "type": "object",
+      "properties": {
+        "tg": {
+          "description": "disease or agent targeted",
+          "$ref": "#/$defs/disease-agent-targeted"
+        },
+        "dt": {
+          "description": "ISO 8601 complete date that holder is considered adequately immunized, and approved for travel",
+          "type": "string",
+          "format": "date"
+        },
+        "ap": {
+          "description": "\"Approval Protocol(s)\": reference(s) to protocol(s) (e.g. vaccination courses/cycles) under which this approval was granted and issued",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "minItems": 1
+        },
+        "co": {
+          "description": "Country of Approval",
+          "$ref": "#/$defs/country_vt"
+        },
+        "is": {
+          "description": "Certificate Issuer",
+          "$ref": "#/$defs/issuer"
+        },
+        "ci": {
+          "description": "Unique Certificate Identifier, UCI",
           "$ref": "#/$defs/certificate_id"
         }
       }
