@@ -3,7 +3,7 @@
 This repository contains a JSON schema for the EU Digital Covid Certificate.
 
 **Schema version:** 1.3.1
-**Release date:** 2020-07-23
+**Release date:** 2022-02-25
 
 
 ## Introduction
@@ -33,7 +33,7 @@ For easy testing, they are combined in:
 
 The rule labeled as `$(MERGED_SCHEMA)` in the [Makefile](./Makefile) makes this target by combining the 4 schema files (“schemata”) mentioned above into one schema file, and also reformatting and validating it.
 The [`merge.sh` script](./merge.sh) does the same, but without reformatting and validating the resulting JSON.
-This can be useful for development purposes, but make sure to also run `make` prior to committing.
+This can be useful for development purposes, but make sure to run `make` prior to committing.
 
 _Note:_ the first 4, non-combined schema files are always leading.
 
