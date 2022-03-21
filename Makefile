@@ -24,8 +24,6 @@ test:: compile validate-examples check-formatting $(MERGED_SCHEMA)
 	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/test/*.json" --valid
 	$(AJV) test -s $(MERGED_SCHEMA) -d "test/invalid/*.json" --invalid
 
-combined: $(MERGED_SCHEMA)
-
 compile::
 	@echo "Compiling schemata..."
 	$(AJV) compile -r "DCC.*.schema.json" -s "DCC.schema.json"
