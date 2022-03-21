@@ -14,12 +14,11 @@ JSON_FILES=	*.json \
 		examples/recovery/*.json \
 		test/invalid/*.json \
 		test/valid/*.json \
-		valuesets/*.json
 
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020 --strict=false
 
 
-test:: compile validate-valuesets validate-examples check-formatting $(MERGED_SCHEMA)
+test:: compile validate-examples check-formatting $(MERGED_SCHEMA)
 	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/vaccination/*.json" --valid
 	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/recovery/*.json" --valid
 	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/test/*.json" --valid
@@ -41,19 +40,16 @@ check-formatting::
 		rm $$file.tmp; \
 	done
 
-validate-examples::
+validate-examples:
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/vaccination/*.json"
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/recovery/*.json"
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/test/*.json"
 
-validate-valid-tests::
+validate-valid-tests:
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/valid/*.json"
 	
-validate-invalid-tests::
+validate-invalid-tests:
 	$(AJV) test -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/invalid/*.json" --invalid
-
-validate-valuesets::
-	$(AJV) validate -s "valueset.json" -d "valuesets/*.json"
 
 $(MERGED_SCHEMA): $(SCHEMATA)
 	python3 merge.py --id $(MERGED_ID) $(SCHEMATA) | jq . > $@
@@ -67,3 +63,4 @@ install-ajv:
 
 clean:
 	rm -f $(MERGED_SCHEMA)
+
