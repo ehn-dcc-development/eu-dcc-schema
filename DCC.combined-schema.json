@@ -100,8 +100,17 @@
     },
     "person_name": {
       "description": "Person name: Surname(s), forename(s) - in that order",
-      "required": [
-        "fnt"
+      "anyOf": [
+        {
+          "required": [
+            "fnt"
+          ]
+        },
+        {
+          "required": [
+            "gnt"
+          ]
+        }
       ],
       "type": "object",
       "properties": {
@@ -111,7 +120,7 @@
           "type": "string",
           "maxLength": 80,
           "examples": [
-            "d'Červenková Panklová"
+            "d'\u00c4\u0152ervenkov\u00c3\u00a1 Panklov\u00c3\u00a1"
           ]
         },
         "fnt": {
@@ -130,7 +139,7 @@
           "type": "string",
           "maxLength": 80,
           "examples": [
-            "Jiřina-Maria Alena"
+            "Ji\u00c5\u2122ina-Maria Alena"
           ]
         },
         "gnt": {
