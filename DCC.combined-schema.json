@@ -120,7 +120,7 @@
           "type": "string",
           "maxLength": 80,
           "examples": [
-            "d'\u00c4\u0152ervenkov\u00c3\u00a1 Panklov\u00c3\u00a1"
+            "d'Červenková Panklová"
           ]
         },
         "fnt": {
@@ -139,7 +139,7 @@
           "type": "string",
           "maxLength": 80,
           "examples": [
-            "Ji\u00c5\u2122ina-Maria Alena"
+            "Jiřina-Maria Alena"
           ]
         },
         "gnt": {

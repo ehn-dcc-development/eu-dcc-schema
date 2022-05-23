@@ -59,7 +59,7 @@ def main():
 
     schema["$id"] = args.id
 
-    print(json.dumps(schema, indent=2))
+    print(json.dumps(schema, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":
