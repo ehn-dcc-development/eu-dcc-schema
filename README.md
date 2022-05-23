@@ -37,10 +37,10 @@ This can be useful for development purposes, but make sure to run `make` prior t
 
 _Note:_ the first 4, non-combined schema files are always leading.
 
-
 ### Value sets
 
 See https://github.com/ehn-dcc-development/ehn-dcc-valuesets
+
 
 ## Implementation Notes
 
@@ -67,12 +67,42 @@ The examples and the test cases can be validated with `ajv` by using the followi
 
 To validate all of the examples:
 
-	make validate-examples
+	$ make validate-examples
 	
 ..and all of expected valid tests:
 
-	make validate-valid-tests
+	$ make validate-valid-tests
 
 ..and all of the expected invalid tests:
 
-	make validate-invalid-tests
+	$ make validate-invalid-tests
+
+
+## JSON formatting
+
+The makefile provides several utility functions, useful for pre-commits.
+
+To check the formatting of the JSON:
+
+	$ make reformat
+	
+To automatically reformat all JSON files:
+
+	$ make check-formatting
+
+
+## Preparing a Pull Request
+
+You're part of the team and are working on the schema and want to share that work with the world. Great! To ensure that your branch is in tip-top shape we have a set of commands in the makefile. These run tests and format the files correctly. Doing this before creating a PR will minimise time spent fixing small things for everyone involved.
+
+The first and most important step: **make sure that you have committed your work to a local feature branch!** These steps modify files, so there is a small chance that some work could be lost. If it's committed then you can always restore it.
+
+Now for the process:
+
+1. Reformat the json (`$ make reformat`)
+1. Compile the schema (`$ make compile`)
+1. Validate the **valid** test cases (`$ make validate-valid-tests`)
+1. Validate the **invalid** test cases (`$ make validate-invalid-tests`)
+1. Validate the examples (`$ make validate-examples`)
+
+Once everything is working as expected (no errors, all tests pass) you can commit any changes, rebase to clean up the commit log if you so wish, push your changes and finally open a PR..

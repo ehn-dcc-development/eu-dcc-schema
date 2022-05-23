@@ -8,7 +8,7 @@ SCHEMATA=	DCC.schema.json \
 MERGED_SCHEMA=	DCC.combined-schema.json
 MERGED_ID=	"$(BASE_URL)/$(MERGED_SCHEMA)"
 
-JSON_FILES=	*.json \
+JSON_FILES=	DCC.*.json \
 		examples/vaccination/*.json \
 		examples/test/*.json \
 		examples/recovery/*.json \
