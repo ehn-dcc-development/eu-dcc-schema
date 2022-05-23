@@ -15,8 +15,8 @@ empty				| Certificate array is empty
 invalid_dob			| Data-of-birth is out of range (before)
 invalid_dob			| Data-of-birth is out of range (after)
 invalid_vac			| Vaccination with an invalid dose number
-missing_dob			| Element 'dob' is missing
-missing_fnt			| Element 'fnt' is missing
+missing_dob			| Element `dob` is missing
+missing_fnt_gnt		| Elements `fnt` and `gnt` are missing
 
 
 # Valid cases 
@@ -38,6 +38,8 @@ T-rat-dates2		| Test, `dob` year/month, `ci` delimited by `#`, `sc` format `YYYY
 T-rat-dates3		| Test, `sc` format `YYYY-MM-DDThh:mm:ss[+-]hh:mm`, `tc` provided
 V-dates1			| Vaccine, `dob` year, `ci` delimited by `/`, `co` is from UNHCR, 
 V-dates2			| Vaccine, `dob` year/month, `ci` delimited by `#`
+V-only-fnt			| Vaccine, `fnt` present, `gnt` missing
+V-only-gnt			| Vaccine, `gnt` present, `fnt` missing
 
 These following variations documented in the specifications are covered by the above test set:
 
@@ -52,6 +54,7 @@ These following variations documented in the specifications are covered by the a
 * Test `sc` date formatted as `YYYY-MM-DDThh:mm:ss[+-]hhmm`
 * Test `sc` date formatted as `YYYY-MM-DDThh:mm:ss[+-]hh:mm`
 * Test value for the optional property `tc` provided for RAT test
+* Test that `gnt` or `fnt` are present
 
 The following cases need adding:
 
