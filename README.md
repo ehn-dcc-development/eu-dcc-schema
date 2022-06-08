@@ -57,6 +57,7 @@ The Makefile assumes that the following tools are installed, and are available o
 * [Node.js](https://nodejs.org/en/download/): installing Node.js also installs the [NPM package manager](https://www.npmjs.com/) which is used to install a couple of dependencies.
 * [jq](https://stedolan.github.io/jq/)
 
+
 The Makefile also relies on the [`ajv` JSON Schema validator](https://ajv.js.org/), which is installed by the `install-ajv` rule in the Makefile:
 
     $ make install-ajv
@@ -77,3 +78,12 @@ To validate all of the examples:
 ..and all of the expected invalid tests:
 
 	make validate-invalid-tests
+
+
+## Committing: git hooks
+
+This project uses git hooks to validate the json files and the above test cases. To use the hooks please configure git to use the hooks we provide:
+
+```
+git config core.hooksPath hooks
+```
