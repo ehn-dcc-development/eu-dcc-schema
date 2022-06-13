@@ -100,8 +100,17 @@
     },
     "person_name": {
       "description": "Person name: Surname(s), forename(s) - in that order",
-      "required": [
-        "fnt"
+      "anyOf": [
+        {
+          "required": [
+            "fnt"
+          ]
+        },
+        {
+          "required": [
+            "gnt"
+          ]
+        }
       ],
       "type": "object",
       "properties": {
