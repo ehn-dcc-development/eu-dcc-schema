@@ -7,14 +7,15 @@
     "gnt": "CHARLES<EDWARD"
   },
   "dob": "1964-01-01",
-  "t": [
+  "v": [
     {
       "tg": "840539006",
-      "tt": "LP6464-4",
-      "nm": "ELITechGroup, SARS-CoV-2 ELITe MGB® Kit",
-      "sc": "2021-06-11T17:30:00Z",
-      "tr": "260415000",
-      "tc": "Example Test Corp, Big City",
+      "vp": "1119349007",
+      "mp": "EU/1/20/1525",
+      "ma": "ORG-100001417",
+      "dn": 1,
+      "sd": 1,
+      "dt": "2021-06-11",
       "co": "NL",
       "is": "Ministry of Health Welfare and Sport",
       "ci": "URN:UVCI:01:NL:DADFCC47C7334E45A906DB12FD859FB7#1"

@@ -2,9 +2,7 @@
   "ver": "1.3.2",
   "nam": {
     "fn": "Smith-Jones",
-    "fnt": "SMITH<JONES",
-    "gn": "Charles Edward",
-    "gnt": "CHARLES<EDWARD"
+    "fnt": "SMITH<JONES"
   },
   "dob": "1964-01-01",
   "t": [
