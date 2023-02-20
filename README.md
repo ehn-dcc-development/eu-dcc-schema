@@ -80,9 +80,10 @@ To validate all of the examples:
 	make validate-invalid-tests
 
 
-## Committing: git hooks
+## Committing: Git hooks
 
-This project uses git hooks to validate the json files and the above test cases. To use the hooks please configure git to use the hooks we provide:
+This project uses Git hooks to validate the JSON files and the above test cases.
+To use the hooks, configure Git to use the hooks we provide, as follows:
 
 ```
 git config core.hooksPath hooks

@@ -1,11 +1,8 @@
 #!/bin/sh
-#
-# An example hook script to verify what is about to be committed.
-# Called by "git commit" with no arguments.  The hook should
-# exit with non-zero status after issuing an appropriate message if
-# it wants to stop the commit.
-#
-# To enable this hook, rename this file to "pre-commit".
+
+# A hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.
+# The hook should exit with non-zero status after issuing an appropriate message if it wants to stop the commit.
 
 if git rev-parse --verify HEAD >/dev/null 2>&1
 then
@@ -46,16 +43,18 @@ EOF
 fi
 
 # If there are whitespace errors, print the offending file names and fail.
-exec git diff-index --check --cached $against --
+git diff-index --check --cached $against --
 
-# Check that all of the schema files have been formatted correctly
-make check-formatting
+# Check that all of the schema files have been formatted correctly.
+make check-formatting || exit 1
 
-# Check all examples
-make validate-examples
+# Check all examples.
+make validate-all || exit 1
 
-# Check test cases which must be catogorized as valid
-make validate-valid-tests
+# Check whether schema files are not yet added to the commit.
+if ! $(git diff --quiet DCC.*.json); then
+  echo "Please add JSON Schema files to the Git index before committing";
+  git diff --stat DCC.*.json
+  exit 1
+fi
 
-# Check test cases which must be catogorized as invalid
-make validate-valid-tests
