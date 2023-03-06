@@ -15,10 +15,12 @@ As per the [EU legislation](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=
 A phrasing of Postel's law I have found useful is: "Tolerant with what you accept, strict in what you generate"
 
 ### Issuance of QR
-[[/images/dcc_postels_law_issuance.png|Postel's Law Issuance]]
+
+Postel's Law for Issuance: ![Postel's Law for Issuance](images/dcc_postels_law_issuance.png)
 
 ### Verification of QR
-[[/images/dcc_postels_law_verification.png|Postel's Law Verification]]
+
+Postel's Law for Verification: ![Postel's Law for Verification](images/dcc_postels_law_verification.png)
 
 In both these cases there is a stage of processing in software in which business rules are applied. Examples of actions that may be present in business rules:
 
@@ -255,7 +257,7 @@ and e.g. [Part 4](https://www.icao.int/publications/Documents/9303_p4_cons_en.pd
 Note that country issuing the certificate is already known in the CWT (signer), so this is another option - and a guaranteed one, too. 
 Thus there is no need for an additional (duplicate) field in the DCC Schema to carry the information of Country of Issuer.
 
-========
+<hr/>
 
 **Footnotes**
 
