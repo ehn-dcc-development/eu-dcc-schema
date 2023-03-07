@@ -45,7 +45,7 @@ See https://github.com/ehn-dcc-development/ehn-dcc-valuesets
 
 ## Implementation Notes
 
-A list of [Frequently Asked Questions](https://github.com/ehn-dcc-development/ehn-dcc-schema/wiki/FAQ) for implementors can be found in the [repository wiki](https://github.com/ehn-dcc-development/ehn-dcc-schema/wiki).
+A list of Frequently Asked Questions (FAQ) for implementors can be found [here](wiki/FAQ.md).
 
 
 ## Prerequisites
@@ -71,11 +71,11 @@ To validate all of the examples:
 
 	make validate-examples
 	
-..and all of expected valid tests:
+...and all of expected valid tests:
 
 	make validate-valid-tests
 
-..and all of the expected invalid tests:
+...and all of the expected invalid tests:
 
 	make validate-invalid-tests
 
