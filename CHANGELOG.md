@@ -1,5 +1,10 @@
 # Change log
 
+## Release 1.3.4
+
+* Update the sub schema `DCC.ValueSets.schema.json` for the new valueset `clinical-trials` corresponding to Annex C of (version 1.16 of) [guidelines document](https://ec.europa.eu/health/sites/default/files/ehealth/docs/digital-green-value-sets_en.pdf).
+
+
 ## Release 1.3.3
 
 * Update the sub schema `DCC.ValueSets.schema.json` for the new valueset `vaccine-encoding-instructions` corresponding to Annex A of (version 1.14 of) [guidelines document](https://ec.europa.eu/health/sites/default/files/ehealth/docs/digital-green-value-sets_en.pdf).

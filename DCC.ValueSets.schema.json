@@ -4,6 +4,11 @@
   "title": "EU DCC",
   "description": "EU Digital Covid Certificate Value Set Data Types",
   "$defs": {
+    "clinical-trials": {
+      "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. Version 1.15, 2023-04-05, Annex C",
+      "type": "string",
+      "valueset-uri": "valuesets/clinical-trials.json"
+    },
     "disease-agent-targeted": {
       "description": "EU eHealthNetwork: Value Sets for Digital Covid Certificates. Version 1.14, 2023-01-25, Section 2.1",
       "type": "string",
