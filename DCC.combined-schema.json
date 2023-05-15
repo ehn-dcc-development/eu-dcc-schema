@@ -3,7 +3,7 @@
   "$id": "https://id.uvci.eu/DCC.combined-schema.json",
   "title": "EU DCC",
   "description": "EU Digital Covid Certificate",
-  "$comment": "Schema version 1.3.2",
+  "$comment": "Schema version 1.3.3",
   "type": "object",
   "oneOf": [
     {
@@ -41,7 +41,8 @@
         "1.0.0",
         "1.3.0",
         "1.3.1",
-        "1.3.2"
+        "1.3.2",
+        "1.3.3"
       ]
     },
     "nam": {

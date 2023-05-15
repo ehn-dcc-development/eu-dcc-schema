@@ -2,9 +2,9 @@
 
 This repository contains a JSON schema for the EU Digital Covid Certificate.
 
-**Schema version:** 1.3.2
+**Schema version:** 1.3.3
 
-**Release date:** 2022-06-30
+**Release date:** 2023-05-24 (tentative, dependent on eHN Coordinated Actions meeting)
 
 
 ## Introduction
@@ -42,6 +42,7 @@ _Note:_ the first 4, non-combined schema files are always leading.
 ### Value sets
 
 See https://github.com/ehn-dcc-development/ehn-dcc-valuesets
+
 
 ## Implementation Notes
 
