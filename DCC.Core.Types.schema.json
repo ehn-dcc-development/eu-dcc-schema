@@ -15,7 +15,7 @@
       "maxLength": 80
     },
     "person_name": {
-      "description": "Person name: Surname(s), forename(s) - in that order",
+      "description": "Person name: The person's name consisting at least of a separate standardised surname, or a standardised forename, or both - with standardisation done according to the rules defined in ICAO Doc 9303 Part 3",
       "anyOf": [
         {
           "required": [

@@ -14,4 +14,4 @@ jobs:
     - name: Install AJV
       run: make install-ajv
     - name: Run tests
-      run: make test
+      run: make validate-all

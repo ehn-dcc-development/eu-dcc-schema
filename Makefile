@@ -18,13 +18,13 @@ JSON_FILES=	*.json \
 AJV=		./node_modules/.bin/ajv -c ajv-formats --spec=draft2020 --strict=false
 
 
-test:: compile validate-examples check-formatting $(MERGED_SCHEMA)
+# validate all DCC JSON files against the merged schema:
+validate-all:: compile $(MERGED_SCHEMA)
 	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/vaccination/*.json" --valid
 	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/recovery/*.json" --valid
 	$(AJV) test -s $(MERGED_SCHEMA) -d "examples/test/*.json" --valid
+	$(AJV) test -s $(MERGED_SCHEMA) -d "test/valid/*.json" --valid
 	$(AJV) test -s $(MERGED_SCHEMA) -d "test/invalid/*.json" --invalid
-
-combined: $(MERGED_SCHEMA)
 
 compile::
 	@echo "Compiling schemata..."
@@ -36,21 +36,28 @@ check-formatting::
 		jq . <$$file >$$file.tmp; \
 		if ! cmp $$file $$file.tmp; then \
 			echo "Please reformat $$file"; \
+			rm $$file.tmp; \
+			exit 1; \
+		else \
+			rm $$file.tmp; \
 		fi; \
-		rm $$file.tmp; \
 	done
 
+# validate valid example DCC JSON files against the unmerged schema:
 validate-examples:
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/vaccination/*.json"
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/recovery/*.json"
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "examples/test/*.json"
 
+# validate valid test DCC JSON files against the unmerged schema:
 validate-valid-tests:
 	$(AJV) validate -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/valid/*.json"
 	
+# validate invalid test DCC JSON files against the unmerged schema:
 validate-invalid-tests:
 	$(AJV) test -r "DCC.*.schema.json" -s "DCC.schema.json" -d "test/invalid/*.json" --invalid
 
+# merge the schemata:
 $(MERGED_SCHEMA): $(SCHEMATA)
 	python3 merge.py --id $(MERGED_ID) $(SCHEMATA) | jq . > $@
 	$(AJV) compile -s $@

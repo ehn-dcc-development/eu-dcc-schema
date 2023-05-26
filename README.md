@@ -2,9 +2,9 @@
 
 This repository contains a JSON schema for the EU Digital Covid Certificate.
 
-**Schema version:** 1.3.2
+**Schema version:** 1.3.3
 
-**Release date:** 2022-06-30
+**Release date:** 2023-05-24 (tentative, dependent on eHN Coordinated Actions meeting)
 
 
 ## Introduction
@@ -43,9 +43,10 @@ _Note:_ the first 4, non-combined schema files are always leading.
 
 See https://github.com/ehn-dcc-development/ehn-dcc-valuesets
 
+
 ## Implementation Notes
 
-A list of [Frequently Asked Questions](https://github.com/ehn-dcc-development/ehn-dcc-schema/wiki/FAQ) for implementors can be found in the [repository wiki](https://github.com/ehn-dcc-development/ehn-dcc-schema/wiki).
+A list of Frequently Asked Questions (FAQ) for implementors can be found [here](wiki/FAQ.md).
 
 
 ## Prerequisites
@@ -56,6 +57,7 @@ The Makefile assumes that the following tools are installed, and are available o
 * A(ny) Make (such as [GNU Make](https://www.gnu.org/software/make/)) to execute the [Makefile](./Makefile).
 * [Node.js](https://nodejs.org/en/download/): installing Node.js also installs the [NPM package manager](https://www.npmjs.com/) which is used to install a couple of dependencies.
 * [jq](https://stedolan.github.io/jq/)
+
 
 The Makefile also relies on the [`ajv` JSON Schema validator](https://ajv.js.org/), which is installed by the `install-ajv` rule in the Makefile:
 
@@ -70,10 +72,20 @@ To validate all of the examples:
 
 	make validate-examples
 	
-..and all of expected valid tests:
+...and all of expected valid tests:
 
 	make validate-valid-tests
 
-..and all of the expected invalid tests:
+...and all of the expected invalid tests:
 
 	make validate-invalid-tests
+
+
+## Committing: Git hooks
+
+This project uses Git hooks to validate the JSON files and the above test cases.
+To use the hooks, configure Git to use the hooks we provide, as follows:
+
+```
+git config core.hooksPath hooks
+```
